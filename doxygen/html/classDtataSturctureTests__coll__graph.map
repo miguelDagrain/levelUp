@@ -1,0 +1,4 @@
+<map id="DtataSturctureTests" name="DtataSturctureTests">
+<area shape="rect" id="node3" href="$classGame.html" title="This class is the container of the game. " alt="" coords="103,81,160,108"/>
+<area shape="rect" id="node4" href="$classGameObject.html" title="Abstract class for each game object. " alt="" coords="84,5,179,32"/>
+</map>

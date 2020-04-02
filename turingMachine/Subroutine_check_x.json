@@ -1,0 +1,38 @@
+{
+  "States": ["q1", "q2", "q3", "q4", "q13", "q14"],
+  "InputAlphabet": ["2", "x", "X", "U", "F", "P"],
+  "TapeAlphabet": ["2", "x", "X", "U", "F", "P", "B"],
+
+  "Tapes": 2,
+
+  "Transitions": [
+    {"from": "q1", "read": ["x", "x"], "to": "q1", "write": ["x", "x"], "direction": ["right", "right"]},
+    {"from": "q1", "read": ["x", "X"], "to": "q2", "write": ["x", "X"], "direction": ["right", "right"]},
+    {"from": "q2", "read": ["x", "X"], "to": "q2", "write": ["x", "X"], "direction": ["right", "right"]},
+    {"from": "q1", "read": ["X", "x"], "to": "q3", "write": ["X", "x"], "direction": ["right", "right"]},
+    {"from": "q3", "read": ["X", "x"], "to": "q3", "write": ["X", "x"], "direction": ["right", "right"]},
+    {"from": "q2", "read": ["X", "2"], "to": "q4", "write": ["X", "2"], "direction": ["right", "stay"]},
+    {"from": "q2", "read": ["x", "2"], "to": "q4", "write": ["x", "2"], "direction": ["right", "stay"]},
+    {"from": "q3", "read": ["U", "X"], "to": "q4", "write": ["P", "X"], "direction": ["stay", "right"]},
+    {"from": "q3", "read": ["U", "x"], "to": "q4", "write": ["P", "x"], "direction": ["stay", "stay"]},
+    {"from": "q4", "read": ["P", "x"], "to": "q4", "write": ["P", "x"], "direction": ["stay", "right"]},
+    {"from": "q4", "read": ["P", "X"], "to": "q4", "write": ["P", "X"], "direction": ["stay", "right"]},
+    {"from": "q4", "read": ["x", "2"], "to": "q4", "write": ["x", "2"], "direction": ["right", "stay"]},
+    {"from": "q4", "read": ["X", "2"], "to": "q4", "write": ["X", "2"], "direction": ["right", "stay"]},
+    {"from": "q4", "read": ["U", "2"], "to": "q4", "write": ["P", "2"], "direction": ["stay", "stay"]},
+    {"from": "q1", "read": ["X", "X"], "to": "q13", "write": ["X", "X"], "direction": ["right", "right"]},
+    {"from": "q3", "read": ["X", "X"], "to": "q13", "write": ["X", "X"], "direction": ["right", "right"]},
+    {"from": "q2", "read": ["X", "X"], "to": "q13", "write": ["X", "X"], "direction": ["right", "right"]},
+    {"from": "q4", "read": ["P", "2"], "to": "q14", "write": ["P", "2"], "direction": ["right", "stay"]},
+    {"from": "q13", "read": ["F", "2"], "to": "q14", "write": ["F", "2"], "direction": ["right", "stay"]},
+    {"from": "q13", "read": ["X", "X"], "to": "q13", "write": ["X", "X"], "direction": ["right", "right"]},
+    {"from": "q13", "read": ["U", "X"], "to": "q13", "write": ["F", "X"], "direction": ["stay", "right"]},
+    {"from": "q13", "read": ["F", "X"], "to": "q13", "write": ["F", "X"], "direction": ["stay", "right"]},
+    {"from": "q13", "read": ["U", "2"], "to": "q13", "write": ["F", "2"], "direction": ["stay", "stay"]},
+    {"from": "q13", "read": ["X", "2"], "to": "q13", "write": ["X", "2"], "direction": ["right", "stay"]}
+  ],
+
+  "StartState": "q1",
+  "Blank": "B",
+  "FinalStates": ["q14"]
+}

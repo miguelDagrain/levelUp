@@ -1,0 +1,90 @@
+speleke[game]{
+levelke[level]{
+    !width:700,
+    !height:700,
+    !color:(34, 128, 178),
+    !+player[entity]{
+        !location:(0,100),
+        !width:50,
+        !height:50,
+        !pathing:playercontrolled,
+        !color:(0,0,255),
+        !texture:dogwater,
+        !movement:1,
+        jumpheight:20
+    },
+    !+bordereen[object]{
+        !location:(700,0),
+        !width:1,
+        !height:700,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+bordertwee[object]{
+        !location:(0, 0),
+        !width:700,
+        !height:1,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+borderdrie[object]{
+        !location:(0, 0),
+        !width:1,
+        !height:700,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+bordervier[object]{
+        !location:(0, 700),
+        !width:700,
+        !height:1,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+sand[object]{
+        !location:(0, 0),
+        !width:400,
+        !height:80,
+        !hitbox:true,
+        !color:(194, 178, 128),
+        !+sandcastle[object]{
+            !location:(80,80),
+            !width:20,
+            !height:20,
+            color:(194, 178, 128)
+        },
+        !+sandcastletwee[object]{
+            !location:(100,80),
+            !width:10,
+            !height:30,
+            color:(194, 178, 128)
+        },
+        !+sandc[object]{
+            !location:(0,0),
+            !width:400,
+            !height:80,
+            color:(194, 178, 128)
+        },
+        +sandcastledrie[object]{
+            !location:(110,80),
+            !width:20,
+            !height:20,
+            color:(194, 178, 128)
+        }
+    },
+    !+ocean[object]{
+        !location:(400, 0),
+        !width:300,
+        !height:70,
+        !hitbox:false,
+        color:(0, 0, 255)
+    },
+    +einde[continue]{
+        !location:(670,0),
+        !color:(125,254,15),
+        !width:10,
+        !height:10,
+        goto:win
+    }
+}
+}

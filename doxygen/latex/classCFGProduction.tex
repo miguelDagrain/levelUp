@@ -1,0 +1,228 @@
+\hypertarget{classCFGProduction}{}\section{C\+F\+G\+Production Class Reference}
+\label{classCFGProduction}\index{C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCFGProduction_ab2fbb6b11310b77bddece142e88d915c}{C\+F\+G\+Production} (const std\+::string \&head, const std\+::vector$<$ std\+::string $>$ \&body, const std\+::string \&action=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructor by value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCFGProduction_a77e4b2d9544c8f4f2658f222bbbc45bf}\label{classCFGProduction_a77e4b2d9544c8f4f2658f222bbbc45bf}} 
+\hyperlink{classCFGProduction_a77e4b2d9544c8f4f2658f222bbbc45bf}{C\+F\+G\+Production} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for \hyperlink{classCFG}{C\+FG} Production. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classCFGProduction_a02f373aea381df35d3e889c65a3a5d1a}{get\+Head} () const
+\begin{DoxyCompactList}\small\item\em returns head of the production \end{DoxyCompactList}\item 
+void \hyperlink{classCFGProduction_a031e16a88f4de0107852494a17a764b1}{set\+Head} (const std\+::string \&head)
+\begin{DoxyCompactList}\small\item\em Sets the head of a production. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \hyperlink{classCFGProduction_a6043cdd8820ea153c073eea0d21c7046}{get\+Body} () const
+\begin{DoxyCompactList}\small\item\em returns the body of a \hyperlink{classCFG}{C\+FG} production \end{DoxyCompactList}\item 
+void \hyperlink{classCFGProduction_a40047c89f0959a9282e84413f01ce876}{set\+Body} (const std\+::vector$<$ std\+::string $>$ \&head)
+\begin{DoxyCompactList}\small\item\em sets the body \end{DoxyCompactList}\item 
+void \hyperlink{classCFGProduction_a5e4960e3b31387a1ffda43af338d9d62}{add\+Tobody} (const std\+::string \&to\+Add)
+\begin{DoxyCompactList}\small\item\em Adds a string to body. \end{DoxyCompactList}\item 
+void \hyperlink{classCFGProduction_a41772dfd4bf4811a91cf6730a0218eb3}{delete\+From\+Body} (const std\+::string \&to\+Delete)
+\begin{DoxyCompactList}\small\item\em Deletes a string from the body. \end{DoxyCompactList}\item 
+void \hyperlink{classCFGProduction_a8f6f3da60808ca63e8c847a9d7b63261}{delete\+From\+Body} (int to\+Delete)
+\begin{DoxyCompactList}\small\item\em Deletes a string from the body with given integer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCFGProduction_a006330342295eb8f34633820d3c0e9b0}\label{classCFGProduction_a006330342295eb8f34633820d3c0e9b0}} 
+virtual \hyperlink{classCFGProduction_a006330342295eb8f34633820d3c0e9b0}{$\sim$\+C\+F\+G\+Production} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classCFGProduction_a5d8151c008e1231e5ed6fae6deacab0d}{operator==} (const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Checks if 2 \hyperlink{classCFG}{C\+FG} productions have the same items. \end{DoxyCompactList}\item 
+bool \hyperlink{classCFGProduction_ae77d1957395260e4ae310b2d0d738a36}{operator!=} (const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Checks if 2 cfg productions are not the same. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classCFGProduction_ab3f316c20cbd8cb70c43131bc0f3c8d7}{get\+Action} () const
+\begin{DoxyCompactList}\small\item\em returns the action \end{DoxyCompactList}\item 
+void \hyperlink{classCFGProduction_a2fd2500ef771a372b1ebdd4919dde770}{set\+Action} (const std\+::string \&action)
+\begin{DoxyCompactList}\small\item\em sets the action \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCFGProduction_ab2fbb6b11310b77bddece142e88d915c}\label{classCFGProduction_ab2fbb6b11310b77bddece142e88d915c}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{C\+F\+G\+Production()}{CFGProduction()}}
+{\footnotesize\ttfamily C\+F\+G\+Production\+::\+C\+F\+G\+Production (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{head,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{body,  }\item[{const std\+::string \&}]{action = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Constructor by value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & the head of the production (where the production comes from) \\
+\hline
+{\em body} & the body of the production (all the symbols teh production goes to) \\
+\hline
+{\em action} & the action that this production should take. This is only used in the parsing process \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCFGProduction_a5e4960e3b31387a1ffda43af338d9d62}\label{classCFGProduction_a5e4960e3b31387a1ffda43af338d9d62}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!add\+Tobody@{add\+Tobody}}
+\index{add\+Tobody@{add\+Tobody}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{add\+Tobody()}{addTobody()}}
+{\footnotesize\ttfamily void C\+F\+G\+Production\+::add\+Tobody (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Add }\end{DoxyParamCaption})}
+
+
+
+Adds a string to body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & The string that needs to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFGProduction_a41772dfd4bf4811a91cf6730a0218eb3}\label{classCFGProduction_a41772dfd4bf4811a91cf6730a0218eb3}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!delete\+From\+Body@{delete\+From\+Body}}
+\index{delete\+From\+Body@{delete\+From\+Body}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{delete\+From\+Body()}{deleteFromBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+Production\+::delete\+From\+Body (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Deletes a string from the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & The string which needs to be deleted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFGProduction_a8f6f3da60808ca63e8c847a9d7b63261}\label{classCFGProduction_a8f6f3da60808ca63e8c847a9d7b63261}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!delete\+From\+Body@{delete\+From\+Body}}
+\index{delete\+From\+Body@{delete\+From\+Body}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{delete\+From\+Body()}{deleteFromBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+Production\+::delete\+From\+Body (\begin{DoxyParamCaption}\item[{int}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Deletes a string from the body with given integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & integer wich is supposed to be the index of the item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFGProduction_ab3f316c20cbd8cb70c43131bc0f3c8d7}\label{classCFGProduction_ab3f316c20cbd8cb70c43131bc0f3c8d7}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!get\+Action@{get\+Action}}
+\index{get\+Action@{get\+Action}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{get\+Action()}{getAction()}}
+{\footnotesize\ttfamily const std\+::string \& C\+F\+G\+Production\+::get\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns the action 
+
+\begin{DoxyReturn}{Returns}
+the action (string) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFGProduction_a6043cdd8820ea153c073eea0d21c7046}\label{classCFGProduction_a6043cdd8820ea153c073eea0d21c7046}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!get\+Body@{get\+Body}}
+\index{get\+Body@{get\+Body}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{get\+Body()}{getBody()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& C\+F\+G\+Production\+::get\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns the body of a \hyperlink{classCFG}{C\+FG} production 
+
+\begin{DoxyReturn}{Returns}
+the vector of the body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFGProduction_a02f373aea381df35d3e889c65a3a5d1a}\label{classCFGProduction_a02f373aea381df35d3e889c65a3a5d1a}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!get\+Head@{get\+Head}}
+\index{get\+Head@{get\+Head}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{get\+Head()}{getHead()}}
+{\footnotesize\ttfamily const std\+::string \& C\+F\+G\+Production\+::get\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns head of the production 
+
+\begin{DoxyReturn}{Returns}
+head 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFGProduction_ae77d1957395260e4ae310b2d0d738a36}\label{classCFGProduction_ae77d1957395260e4ae310b2d0d738a36}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool C\+F\+G\+Production\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Checks if 2 cfg productions are not the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & a cfg production \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFGProduction_a5d8151c008e1231e5ed6fae6deacab0d}\label{classCFGProduction_a5d8151c008e1231e5ed6fae6deacab0d}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!operator==@{operator==}}
+\index{operator==@{operator==}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool C\+F\+G\+Production\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Checks if 2 \hyperlink{classCFG}{C\+FG} productions have the same items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & a \hyperlink{classCFG}{C\+FG} production \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they are the same, else\+: false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFGProduction_a2fd2500ef771a372b1ebdd4919dde770}\label{classCFGProduction_a2fd2500ef771a372b1ebdd4919dde770}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!set\+Action@{set\+Action}}
+\index{set\+Action@{set\+Action}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{set\+Action()}{setAction()}}
+{\footnotesize\ttfamily void C\+F\+G\+Production\+::set\+Action (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action }\end{DoxyParamCaption})}
+
+
+
+sets the action 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & String which is supposed to become the action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFGProduction_a40047c89f0959a9282e84413f01ce876}\label{classCFGProduction_a40047c89f0959a9282e84413f01ce876}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!set\+Body@{set\+Body}}
+\index{set\+Body@{set\+Body}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{set\+Body()}{setBody()}}
+{\footnotesize\ttfamily void C\+F\+G\+Production\+::set\+Body (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{head }\end{DoxyParamCaption})}
+
+
+
+sets the body 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & The vector of strings that is supposed to become the body \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFGProduction_a031e16a88f4de0107852494a17a764b1}\label{classCFGProduction_a031e16a88f4de0107852494a17a764b1}} 
+\index{C\+F\+G\+Production@{C\+F\+G\+Production}!set\+Head@{set\+Head}}
+\index{set\+Head@{set\+Head}!C\+F\+G\+Production@{C\+F\+G\+Production}}
+\subsubsection{\texorpdfstring{set\+Head()}{setHead()}}
+{\footnotesize\ttfamily void C\+F\+G\+Production\+::set\+Head (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{head }\end{DoxyParamCaption})}
+
+
+
+Sets the head of a production. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & String that is supposed to become the head \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/C\+F\+G\+Production.\+h\item 
+src/C\+F\+G\+Production.\+cpp\end{DoxyCompactItemize}

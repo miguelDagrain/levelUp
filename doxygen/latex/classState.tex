@@ -1,0 +1,158 @@
+\hypertarget{classState}{}\section{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+Class which represents the state of the Turing machine.  
+
+
+
+
+{\ttfamily \#include $<$Turing\+Machine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classState_a95aa2ca390f05627acf00149efd568c7}\label{classState_a95aa2ca390f05627acf00149efd568c7}} 
+\hyperlink{classState_a95aa2ca390f05627acf00149efd568c7}{State} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for a \hyperlink{classState}{State}. \end{DoxyCompactList}\item 
+\hyperlink{classState_acec8f151d743a370200a6468cdb6ed5e}{State} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Constructor for state which takes name of state as argument. \end{DoxyCompactList}\item 
+\hyperlink{classState_afc0a48251083c35bb1acb67f1fb89f0e}{State} (std\+::string name, std\+::vector$<$ \hyperlink{classTransition}{Transition} $>$ \&\&transitions)
+\begin{DoxyCompactList}\small\item\em Constructor for the state which takes the states name and its transitions as arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classState_a783d52422b544bb226e13de8ecfd6ad6}\label{classState_a783d52422b544bb226e13de8ecfd6ad6}} 
+virtual \hyperlink{classState_a783d52422b544bb226e13de8ecfd6ad6}{$\sim$\+State} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor of the \hyperlink{classState}{State}. \end{DoxyCompactList}\item 
+void \hyperlink{classState_afa47bb95d7a504a74d0cd9f5deb6893b}{add\+\_\+transition} (\hyperlink{classTransition}{Transition} \&\&transition)
+\begin{DoxyCompactList}\small\item\em Adds a transition to the state. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classState_ab732c53a7478c2a24217283340e0c165}{get\+\_\+name} () const
+\begin{DoxyCompactList}\small\item\em Getter for the name of the state. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classTransition}{Transition} $>$ \hyperlink{classState_a652bb5b393761ec2d42445f96446c4a6}{get\+\_\+transitions} () const
+\begin{DoxyCompactList}\small\item\em Getter for the transitions of the state. \end{DoxyCompactList}\item 
+const \hyperlink{classTransition}{Transition} $\ast$ \hyperlink{classState_a807d7c8ed8b9c093d91900217dd302c1}{find\+\_\+transition} (std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&input) const
+\begin{DoxyCompactList}\small\item\em This functions searches for the transition with a certain input If none is found, this function returns a nullptr. \end{DoxyCompactList}\item 
+bool \hyperlink{classState_ab98d310aaceb21737346521c5bc6fc6c}{operator==} (const \hyperlink{classState}{State} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator for \hyperlink{classState}{State}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which represents the state of the Turing machine. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classState_acec8f151d743a370200a6468cdb6ed5e}\label{classState_acec8f151d743a370200a6468cdb6ed5e}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\subsubsection{\texorpdfstring{State()}{State()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for state which takes name of state as argument. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classState_afc0a48251083c35bb1acb67f1fb89f0e}\label{classState_afc0a48251083c35bb1acb67f1fb89f0e}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\subsubsection{\texorpdfstring{State()}{State()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ \hyperlink{classTransition}{Transition} $>$ \&\&}]{transitions }\end{DoxyParamCaption})}
+
+
+
+Constructor for the state which takes the states name and its transitions as arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the state \\
+\hline
+{\em transitions} & Transitions of the state \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classState_afa47bb95d7a504a74d0cd9f5deb6893b}\label{classState_afa47bb95d7a504a74d0cd9f5deb6893b}} 
+\index{State@{State}!add\+\_\+transition@{add\+\_\+transition}}
+\index{add\+\_\+transition@{add\+\_\+transition}!State@{State}}
+\subsubsection{\texorpdfstring{add\+\_\+transition()}{add\_transition()}}
+{\footnotesize\ttfamily void State\+::add\+\_\+transition (\begin{DoxyParamCaption}\item[{\hyperlink{classTransition}{Transition} \&\&}]{transition }\end{DoxyParamCaption})}
+
+
+
+Adds a transition to the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transition} & \hyperlink{classTransition}{Transition} to add to the state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classState_a807d7c8ed8b9c093d91900217dd302c1}\label{classState_a807d7c8ed8b9c093d91900217dd302c1}} 
+\index{State@{State}!find\+\_\+transition@{find\+\_\+transition}}
+\index{find\+\_\+transition@{find\+\_\+transition}!State@{State}}
+\subsubsection{\texorpdfstring{find\+\_\+transition()}{find\_transition()}}
+{\footnotesize\ttfamily const \hyperlink{classTransition}{Transition} $\ast$ State\+::find\+\_\+transition (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&}]{input }\end{DoxyParamCaption}) const}
+
+
+
+This functions searches for the transition with a certain input If none is found, this function returns a nullptr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to transitions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classState_ab732c53a7478c2a24217283340e0c165}\label{classState_ab732c53a7478c2a24217283340e0c165}} 
+\index{State@{State}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!State@{State}}
+\subsubsection{\texorpdfstring{get\+\_\+name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string State\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the name of the state. 
+
+\begin{DoxyReturn}{Returns}
+Name of the state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classState_a652bb5b393761ec2d42445f96446c4a6}\label{classState_a652bb5b393761ec2d42445f96446c4a6}} 
+\index{State@{State}!get\+\_\+transitions@{get\+\_\+transitions}}
+\index{get\+\_\+transitions@{get\+\_\+transitions}!State@{State}}
+\subsubsection{\texorpdfstring{get\+\_\+transitions()}{get\_transitions()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{classTransition}{Transition} $>$ State\+::get\+\_\+transitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the transitions of the state. 
+
+\begin{DoxyReturn}{Returns}
+Transitions of the state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classState_ab98d310aaceb21737346521c5bc6fc6c}\label{classState_ab98d310aaceb21737346521c5bc6fc6c}} 
+\index{State@{State}!operator==@{operator==}}
+\index{operator==@{operator==}!State@{State}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool State\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classState}{State} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for \hyperlink{classState}{State}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \hyperlink{classState}{State} to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{classState}{State} is equal to the other 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Turing\+Machine.\+h\item 
+src/Turing\+Machine.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,211 @@
+\hypertarget{classTuringMachine}{}\section{Turing\+Machine Class Reference}
+\label{classTuringMachine}\index{Turing\+Machine@{Turing\+Machine}}
+
+
+This class represents a Turing machine.  
+
+
+
+
+{\ttfamily \#include $<$Turing\+Machine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTuringMachine_ab998b1ffcadd9e6101707346749ecd53}\label{classTuringMachine_ab998b1ffcadd9e6101707346749ecd53}} 
+\hyperlink{classTuringMachine_ab998b1ffcadd9e6101707346749ecd53}{Turing\+Machine} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor of Turing machine. \end{DoxyCompactList}\item 
+\hyperlink{classTuringMachine_abe6ad3a974d2341a75908b0ab6250410}{Turing\+Machine} (std\+::vector$<$ \hyperlink{classState}{State} $\ast$ $>$ \&states, std\+::vector$<$ std\+::string $>$ \&input\+\_\+symbols, std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&tape\+\_\+symbols, \hyperlink{classState}{State} $\ast$start\+\_\+state, \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$blank, std\+::vector$<$ \hyperlink{classState}{State} $\ast$ $>$ \&final\+\_\+states, int amount\+\_\+of\+\_\+tapes)
+\begin{DoxyCompactList}\small\item\em Constructor of Turing machine. \end{DoxyCompactList}\item 
+\hyperlink{classTuringMachine_ad56c71b24817a917f5e4984035070cc3}{Turing\+Machine} (char input\+\_\+file\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Constructor of Turing machine created from file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTuringMachine_a5279d180cd87e664447c6b40e0ce55e2}\label{classTuringMachine_a5279d180cd87e664447c6b40e0ce55e2}} 
+\hyperlink{classTuringMachine_a5279d180cd87e664447c6b40e0ce55e2}{$\sim$\+Turing\+Machine} ()
+\begin{DoxyCompactList}\small\item\em Destructor for Turing machine. \end{DoxyCompactList}\item 
+bool \hyperlink{classTuringMachine_a6ac17dcb3bce76b6e02154cb749526c4}{evaluate\+\_\+string} ()
+\begin{DoxyCompactList}\small\item\em Evaluates a string using the Turing machine Important\+: the tapes need to be initialized first (setup\+\_\+tapes) \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classTuringMachine_a103fa5e9b267ea625770297cb9168a34}{calculate} ()
+\begin{DoxyCompactList}\small\item\em This function does a calculation with the Turing machine Important\+:the tapes need to be initialized first (setup\+\_\+tapes) \end{DoxyCompactList}\item 
+void \hyperlink{classTuringMachine_add19f4c90678b56d5a78d0e88c389cd8}{setup\+\_\+tapes\+\_\+with\+\_\+string} (std\+::vector$<$ std\+::string $>$ \&input)
+\begin{DoxyCompactList}\small\item\em Setup the tapes with a certain input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTuringMachine_a6423abd83f107001747c544fbd111be3}\label{classTuringMachine_a6423abd83f107001747c544fbd111be3}} 
+void \hyperlink{classTuringMachine_a6423abd83f107001747c544fbd111be3}{reset\+\_\+tapes} ()
+\begin{DoxyCompactList}\small\item\em Resets the tapes of the Turing machine. \end{DoxyCompactList}\item 
+void \hyperlink{classTuringMachine_a15485e4e3a38f21581f0d13127b6e6f7}{add\+\_\+subroutine} (\hyperlink{classTuringMachine}{Turing\+Machine} \&\&subroutine, \hyperlink{classState}{State} $\ast$state\+From, std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&get\+In\+\_\+read, std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&get\+In\+\_\+write, std\+::vector$<$ Direction $>$ \&\&get\+In\+\_\+dir, \hyperlink{classState}{State} $\ast$state\+To, std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&get\+Out\+\_\+read, std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&get\+Out\+\_\+write, std\+::vector$<$ Direction $>$ \&\&get\+Out\+\_\+dir)
+\begin{DoxyCompactList}\small\item\em Adds a subroutine to the Turing machine. \end{DoxyCompactList}\item 
+void \hyperlink{classTuringMachine_abd6288a60955a8b1b2d0f58d0b3d63da}{to\+\_\+dot} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Generate a dot file of the Turing machine. \end{DoxyCompactList}\item 
+const \hyperlink{classState}{State} $\ast$ \hyperlink{classTuringMachine_a596149a33ff6f9c49100c71977ad16c6}{get\+\_\+start\+\_\+state} ()
+\begin{DoxyCompactList}\small\item\em Getter for start \hyperlink{classState}{State}. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classState}{State} $\ast$ $>$ \& \hyperlink{classTuringMachine_ab34c3253e9d158d91a8d2e4473267761}{get\+\_\+final\+\_\+states} ()
+\begin{DoxyCompactList}\small\item\em Getter for the final states of the Turing machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a Turing machine. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTuringMachine_abe6ad3a974d2341a75908b0ab6250410}\label{classTuringMachine_abe6ad3a974d2341a75908b0ab6250410}} 
+\index{Turing\+Machine@{Turing\+Machine}!Turing\+Machine@{Turing\+Machine}}
+\index{Turing\+Machine@{Turing\+Machine}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{Turing\+Machine()}{TuringMachine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Turing\+Machine\+::\+Turing\+Machine (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classState}{State} $\ast$ $>$ \&}]{states,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{input\+\_\+symbols,  }\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&}]{tape\+\_\+symbols,  }\item[{\hyperlink{classState}{State} $\ast$}]{start\+\_\+state,  }\item[{\hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$}]{blank,  }\item[{std\+::vector$<$ \hyperlink{classState}{State} $\ast$ $>$ \&}]{final\+\_\+states,  }\item[{int}]{amount\+\_\+of\+\_\+tapes }\end{DoxyParamCaption})}
+
+
+
+Constructor of Turing machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em states} & States of Turing machine \\
+\hline
+{\em input\+\_\+symbols} & Input symbols op Turing machine \\
+\hline
+{\em tape\+\_\+symbols} & Tape symbols of Turing machine \\
+\hline
+{\em start\+\_\+state} & Start state of Turing machine \\
+\hline
+{\em blank} & Blank symbol of Turing machine \\
+\hline
+{\em final\+\_\+states} & Final states of Turing machine \\
+\hline
+{\em amount\+\_\+of\+\_\+tapes} & The amount of tapes of a Turing machine (multi tape support) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTuringMachine_ad56c71b24817a917f5e4984035070cc3}\label{classTuringMachine_ad56c71b24817a917f5e4984035070cc3}} 
+\index{Turing\+Machine@{Turing\+Machine}!Turing\+Machine@{Turing\+Machine}}
+\index{Turing\+Machine@{Turing\+Machine}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{Turing\+Machine()}{TuringMachine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Turing\+Machine\+::\+Turing\+Machine (\begin{DoxyParamCaption}\item[{char}]{input\+\_\+file\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of Turing machine created from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+file} & Input file in json \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTuringMachine_a15485e4e3a38f21581f0d13127b6e6f7}\label{classTuringMachine_a15485e4e3a38f21581f0d13127b6e6f7}} 
+\index{Turing\+Machine@{Turing\+Machine}!add\+\_\+subroutine@{add\+\_\+subroutine}}
+\index{add\+\_\+subroutine@{add\+\_\+subroutine}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{add\+\_\+subroutine()}{add\_subroutine()}}
+{\footnotesize\ttfamily void Turing\+Machine\+::add\+\_\+subroutine (\begin{DoxyParamCaption}\item[{\hyperlink{classTuringMachine}{Turing\+Machine} \&\&}]{subroutine,  }\item[{\hyperlink{classState}{State} $\ast$}]{state\+From,  }\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&}]{get\+In\+\_\+read,  }\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&}]{get\+In\+\_\+write,  }\item[{std\+::vector$<$ Direction $>$ \&\&}]{get\+In\+\_\+dir,  }\item[{\hyperlink{classState}{State} $\ast$}]{state\+To,  }\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&}]{get\+Out\+\_\+read,  }\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \&\&}]{get\+Out\+\_\+write,  }\item[{std\+::vector$<$ Direction $>$ \&\&}]{get\+Out\+\_\+dir }\end{DoxyParamCaption})}
+
+
+
+Adds a subroutine to the Turing machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subroutine} & Subroutine to add \\
+\hline
+{\em state\+From} & From state input \\
+\hline
+{\em get\+In\+\_\+read} & Read symbols input \\
+\hline
+{\em get\+In\+\_\+write} & Write symbols input \\
+\hline
+{\em get\+In\+\_\+dir} & Directions input \\
+\hline
+{\em state\+To} & To state \\
+\hline
+{\em get\+Out\+\_\+read} & Read symbols output \\
+\hline
+{\em get\+Out\+\_\+write} & Write symbols output \\
+\hline
+{\em get\+Out\+\_\+dir} & Directions output \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTuringMachine_a103fa5e9b267ea625770297cb9168a34}\label{classTuringMachine_a103fa5e9b267ea625770297cb9168a34}} 
+\index{Turing\+Machine@{Turing\+Machine}!calculate@{calculate}}
+\index{calculate@{calculate}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Turing\+Machine\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function does a calculation with the Turing machine Important\+:the tapes need to be initialized first (setup\+\_\+tapes) 
+
+\begin{DoxyReturn}{Returns}
+Vector of strings where the calculation is made on 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTuringMachine_a6ac17dcb3bce76b6e02154cb749526c4}\label{classTuringMachine_a6ac17dcb3bce76b6e02154cb749526c4}} 
+\index{Turing\+Machine@{Turing\+Machine}!evaluate\+\_\+string@{evaluate\+\_\+string}}
+\index{evaluate\+\_\+string@{evaluate\+\_\+string}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{evaluate\+\_\+string()}{evaluate\_string()}}
+{\footnotesize\ttfamily bool Turing\+Machine\+::evaluate\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Evaluates a string using the Turing machine Important\+: the tapes need to be initialized first (setup\+\_\+tapes) 
+
+\begin{DoxyReturn}{Returns}
+True if the string is evaluated by the Turing machine, false if it is not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTuringMachine_ab34c3253e9d158d91a8d2e4473267761}\label{classTuringMachine_ab34c3253e9d158d91a8d2e4473267761}} 
+\index{Turing\+Machine@{Turing\+Machine}!get\+\_\+final\+\_\+states@{get\+\_\+final\+\_\+states}}
+\index{get\+\_\+final\+\_\+states@{get\+\_\+final\+\_\+states}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{get\+\_\+final\+\_\+states()}{get\_final\_states()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{classState}{State} $\ast$ $>$ \& Turing\+Machine\+::get\+\_\+final\+\_\+states (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the final states of the Turing machine. 
+
+\begin{DoxyReturn}{Returns}
+final states of the Turing machine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTuringMachine_a596149a33ff6f9c49100c71977ad16c6}\label{classTuringMachine_a596149a33ff6f9c49100c71977ad16c6}} 
+\index{Turing\+Machine@{Turing\+Machine}!get\+\_\+start\+\_\+state@{get\+\_\+start\+\_\+state}}
+\index{get\+\_\+start\+\_\+state@{get\+\_\+start\+\_\+state}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{get\+\_\+start\+\_\+state()}{get\_start\_state()}}
+{\footnotesize\ttfamily const \hyperlink{classState}{State} $\ast$ Turing\+Machine\+::get\+\_\+start\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for start \hyperlink{classState}{State}. 
+
+\begin{DoxyReturn}{Returns}
+start \hyperlink{classState}{State} of Turing machine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTuringMachine_add19f4c90678b56d5a78d0e88c389cd8}\label{classTuringMachine_add19f4c90678b56d5a78d0e88c389cd8}} 
+\index{Turing\+Machine@{Turing\+Machine}!setup\+\_\+tapes\+\_\+with\+\_\+string@{setup\+\_\+tapes\+\_\+with\+\_\+string}}
+\index{setup\+\_\+tapes\+\_\+with\+\_\+string@{setup\+\_\+tapes\+\_\+with\+\_\+string}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{setup\+\_\+tapes\+\_\+with\+\_\+string()}{setup\_tapes\_with\_string()}}
+{\footnotesize\ttfamily void Turing\+Machine\+::setup\+\_\+tapes\+\_\+with\+\_\+string (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{input }\end{DoxyParamCaption})}
+
+
+
+Setup the tapes with a certain input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input the setup the tape with, each string represents a tape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTuringMachine_abd6288a60955a8b1b2d0f58d0b3d63da}\label{classTuringMachine_abd6288a60955a8b1b2d0f58d0b3d63da}} 
+\index{Turing\+Machine@{Turing\+Machine}!to\+\_\+dot@{to\+\_\+dot}}
+\index{to\+\_\+dot@{to\+\_\+dot}!Turing\+Machine@{Turing\+Machine}}
+\subsubsection{\texorpdfstring{to\+\_\+dot()}{to\_dot()}}
+{\footnotesize\ttfamily void Turing\+Machine\+::to\+\_\+dot (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Generate a dot file of the Turing machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Stream to generate dot file to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Turing\+Machine.\+h\item 
+src/Turing\+Machine.\+cpp\end{DoxyCompactItemize}

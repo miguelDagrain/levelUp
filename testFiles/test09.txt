@@ -1,0 +1,108 @@
+speleke[game]{
+levelke[level]{
+    !width:700,
+    !height:700,
+    !color:(34, 128, 178),
+    !+player[entity]{
+        !location:(10,30),
+        !width:50,
+        !height:50,
+        !pathing:playercontrolled,
+        !color:(0,0,255),
+        !texture:dog,
+        !movement:1,
+        jumpheight:13
+    },
+    !+bordereen[object]{
+        !location:(700,0),
+        !width:1,
+        !height:700,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+bordertwee[object]{
+        !location:(0, 0),
+        !width:700,
+        !height:1,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+borderdrie[object]{
+        !location:(0, 0),
+        !width:1,
+        !height:700,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+bordervier[object]{
+        !location:(0, 700),
+        !width:700,
+        !height:1,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+platformeen[object]{
+        !location:(0, 0),
+        !width:80,
+        !height:30,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    !+platformtwee[object]{
+        !location:(80, 0),
+        !width:100,
+        !height:100,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    !+platformdrie[object]{
+        !location:(180, 0),
+        !width:100,
+        !height:180,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    !+platformvier[object]{
+        !location:(280, 0),
+        !width:100,
+        !height:260,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    !+platformvijf[object]{
+        !location:(380, 0),
+        !width:100,
+        !height:340,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    !+platformzes[object]{
+        !location:(480, 0),
+        !width:100,
+        !height:420,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    !+platformzeven[object]{
+        !location:(580, 0),
+        !width:100,
+        !height:500,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    !+platformnegen[object]{
+        !location:(680, 0),
+        !width:100,
+        !height:580,
+        !hitbox:true,
+        color:(101,67,33)
+    },
+    +einde[continue]{
+        !location:(690,580),
+        !color:(125,254,15),
+        !width:10,
+        !height:10,
+        goto:win
+    }
+}
+}

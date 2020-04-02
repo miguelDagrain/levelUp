@@ -1,0 +1,105 @@
+speleke[game]{
+levelke[level]{
+    !width:700,
+    !height:700,
+    !color:(34, 128, 178),
+    !+player[entity]{
+        !location:(70,630),
+        !width:50,
+        !height:50,
+        !pathing:playercontrolled,
+        !color:(0,0,255),
+        !texture:dogwater,
+        !movement:1,
+        jumpheight:30
+    },
+    !+bordereen[object]{
+        !location:(700,0),
+        !width:1,
+        !height:700,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+bordertwee[object]{
+        !location:(0, 0),
+        !width:700,
+        !height:1,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+borderdrie[object]{
+        !location:(0, 0),
+        !width:1,
+        !height:700,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+bordervier[object]{
+        !location:(0, 700),
+        !width:700,
+        !height:1,
+        !hitbox:true,
+        color:(0,0,0)
+    },
+    !+platformeen[object]{
+        !location:(0, 0),
+        !width:40,
+        !height:700,
+        !hitbox:true,
+        color:(96, 128, 56)
+    },
+    !+platformtwee[object]{
+        !location:(0, 0),
+        !width:400,
+        !height:40,
+        !hitbox:true,
+        color:(96, 128, 56)
+    },
+    !+gras[object]{
+        !location:(400, 0),
+        !width:300,
+        !height:280,
+        !hitbox:true,
+        color:(96, 128, 56)
+    },
+    !+water[object]{
+        !location:(60, 60),
+        !width:360,
+        !height:220,
+        !hitbox:false,
+        color:(0, 119, 190)
+    },
+    !+zwembad[object]{
+        !location:(40, 40),
+        !width:500,
+        !height:300,
+        !hitbox:true,
+        !color:(220,220,220),
+        !walleen[object]{
+            !location:(0, 0),
+            !width:20,
+            !height:240,
+            color:(245,255,250)
+        },
+        !walltwee[object]{
+            !location:(0, 0),
+            !width:360,
+            !height:20,
+            color:(245,255,250)
+        },
+        walldrie[object]{
+            !location:(360, 0),
+            !width:20,
+            !height:240,
+            color:(245,255,250)
+        }
+    },
+    +einde[continue]{
+        !location:(600,280),
+        !color:(125,254,15),
+        !width:10,
+        !height:10,
+        goto:win
+    }
+}
+}

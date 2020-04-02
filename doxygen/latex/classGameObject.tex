@@ -1,0 +1,287 @@
+\hypertarget{classGameObject}{}\section{Game\+Object Class Reference}
+\label{classGameObject}\index{Game\+Object@{Game\+Object}}
+
+
+Abstract class for each game object.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Game\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classGameObject__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}\label{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}} 
+\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGameObject_af1571c09945131e1d791dfbbe56d69df}{Game\+Object} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Constructor of game object. \end{DoxyCompactList}\item 
+\hyperlink{classGameObject_ae18349131123d744c2f0e89114272b38}{Game\+Object} (int width, int height, std\+::shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$ color)
+\begin{DoxyCompactList}\small\item\em Constructor of game object with color. \end{DoxyCompactList}\item 
+int \hyperlink{classGameObject_a912dd50a89fa0ea4bb674ece6fd993a4}{get\+Width} () const
+\begin{DoxyCompactList}\small\item\em Getter of the width. \end{DoxyCompactList}\item 
+void \hyperlink{classGameObject_aea1d6398e4b66af6987c24e7728463ad}{set\+Width} (int width)
+\begin{DoxyCompactList}\small\item\em Setter of the width. \end{DoxyCompactList}\item 
+int \hyperlink{classGameObject_a6aac91785cfba6631668db216235c79e}{get\+Height} () const
+\begin{DoxyCompactList}\small\item\em Getter of the height. \end{DoxyCompactList}\item 
+void \hyperlink{classGameObject_aa08869921287057b06c7f2ae89eef9ab}{set\+Height} (int height)
+\begin{DoxyCompactList}\small\item\em sets the height \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$ \& \hyperlink{classGameObject_aa51b4277277c1c851e59847015c937e8}{get\+Color} () const
+\begin{DoxyCompactList}\small\item\em Getter of the color. \end{DoxyCompactList}\item 
+void \hyperlink{classGameObject_a9751f8cfc3a86b61524879fb3f0aea79}{set\+Color} (const std\+::shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$ \&color)
+\begin{DoxyCompactList}\small\item\em Setter of the color. \end{DoxyCompactList}\item 
+void \hyperlink{classGameObject_a728c8a03416fd7bde2498d79ae6c26a3}{set\+Name} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the game object. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classGameObject_a72c04187da1840a922b7cbafa12e4882}{get\+Name} () const
+\begin{DoxyCompactList}\small\item\em Returns the gamename. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}\label{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}} 
+virtual \hyperlink{classGameObject_a67ae2fa6e7916c799700cd659975d8ea}{$\sim$\+Game\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+const string \& \hyperlink{classGameObject_a008037b2f4572fe79d38d5abea5b1058}{get\+Texture\+Path} () const
+\begin{DoxyCompactList}\small\item\em Getter for the Texture path of the object. \end{DoxyCompactList}\item 
+void \hyperlink{classGameObject_a0d9759f01e8098149ce3e69cb8878534}{set\+Texture\+Path} (const string \&texture\+Path)
+\begin{DoxyCompactList}\small\item\em Setter for texture path of the object. \end{DoxyCompactList}\item 
+bool \hyperlink{classGameObject_a70e86ba6707ed1b23bb37d1336cd41df}{has\+Texture} () const
+\begin{DoxyCompactList}\small\item\em Determine whether a \hyperlink{classGameObject}{Game\+Object} has a texture or not. \end{DoxyCompactList}\item 
+void \hyperlink{classGameObject_a47616d924a30ae7db22387234c0381a1}{scale} (float scaleX, float scaleY)
+\begin{DoxyCompactList}\small\item\em Scales the \hyperlink{classGameObject}{Game\+Object} that must be drawn correctly. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameObject_a3db3881d7943862b683cda0c08439a63}\label{classGameObject_a3db3881d7943862b683cda0c08439a63}} 
+void {\bfseries set\+Position} (const game\+Location \&location)
+\item 
+\mbox{\Hypertarget{classGameObject_abf4de46e52c8f23d18d51bc29744b136}\label{classGameObject_abf4de46e52c8f23d18d51bc29744b136}} 
+void {\bfseries draw} (sf\+::\+Render\+Window \&window)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for each game object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGameObject_af1571c09945131e1d791dfbbe56d69df}\label{classGameObject_af1571c09945131e1d791dfbbe56d69df}} 
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Game\+Object()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Constructor of game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the game object \\
+\hline
+{\em height} & The height of the game object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameObject_ae18349131123d744c2f0e89114272b38}\label{classGameObject_ae18349131123d744c2f0e89114272b38}} 
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\index{Game\+Object@{Game\+Object}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{Game\+Object()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$}]{color }\end{DoxyParamCaption})}
+
+
+
+Constructor of game object with color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the game object \\
+\hline
+{\em height} & Height of the game object \\
+\hline
+{\em color} & \hyperlink{structColor}{Color} of the game object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameObject_aa51b4277277c1c851e59847015c937e8}\label{classGameObject_aa51b4277277c1c851e59847015c937e8}} 
+\index{Game\+Object@{Game\+Object}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$ \& Game\+Object\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter of the color. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer that is the color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameObject_a6aac91785cfba6631668db216235c79e}\label{classGameObject_a6aac91785cfba6631668db216235c79e}} 
+\index{Game\+Object@{Game\+Object}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Game\+Object\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter of the height. 
+
+\begin{DoxyReturn}{Returns}
+int, height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameObject_a72c04187da1840a922b7cbafa12e4882}\label{classGameObject_a72c04187da1840a922b7cbafa12e4882}} 
+\index{Game\+Object@{Game\+Object}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Game\+Object\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the gamename. 
+
+\begin{DoxyReturn}{Returns}
+The name of the game 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameObject_a008037b2f4572fe79d38d5abea5b1058}\label{classGameObject_a008037b2f4572fe79d38d5abea5b1058}} 
+\index{Game\+Object@{Game\+Object}!get\+Texture\+Path@{get\+Texture\+Path}}
+\index{get\+Texture\+Path@{get\+Texture\+Path}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Texture\+Path()}{getTexturePath()}}
+{\footnotesize\ttfamily const string \& Game\+Object\+::get\+Texture\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the Texture path of the object. 
+
+\begin{DoxyReturn}{Returns}
+String which represents texture path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameObject_a912dd50a89fa0ea4bb674ece6fd993a4}\label{classGameObject_a912dd50a89fa0ea4bb674ece6fd993a4}} 
+\index{Game\+Object@{Game\+Object}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Game\+Object\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter of the width. 
+
+\begin{DoxyReturn}{Returns}
+int, width 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameObject_a70e86ba6707ed1b23bb37d1336cd41df}\label{classGameObject_a70e86ba6707ed1b23bb37d1336cd41df}} 
+\index{Game\+Object@{Game\+Object}!has\+Texture@{has\+Texture}}
+\index{has\+Texture@{has\+Texture}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{has\+Texture()}{hasTexture()}}
+{\footnotesize\ttfamily bool Game\+Object\+::has\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Determine whether a \hyperlink{classGameObject}{Game\+Object} has a texture or not. 
+
+\begin{DoxyReturn}{Returns}
+True if the \hyperlink{classGameObject}{Game\+Object} has a texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGameObject_a47616d924a30ae7db22387234c0381a1}\label{classGameObject_a47616d924a30ae7db22387234c0381a1}} 
+\index{Game\+Object@{Game\+Object}!scale@{scale}}
+\index{scale@{scale}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily void Game\+Object\+::scale (\begin{DoxyParamCaption}\item[{float}]{scaleX,  }\item[{float}]{scaleY }\end{DoxyParamCaption})}
+
+
+
+Scales the \hyperlink{classGameObject}{Game\+Object} that must be drawn correctly. 
+
+If the \hyperlink{classGameObject}{Game\+Object} has a texture, the sprite will be scaled, else the rectangle will be scaled. 
+\begin{DoxyParams}{Parameters}
+{\em scaleX} & Scale factor of X. \\
+\hline
+{\em scaleY} & Scale factor of Y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameObject_a9751f8cfc3a86b61524879fb3f0aea79}\label{classGameObject_a9751f8cfc3a86b61524879fb3f0aea79}} 
+\index{Game\+Object@{Game\+Object}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Color (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$ \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Setter of the color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A shared pointer that is the color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameObject_aa08869921287057b06c7f2ae89eef9ab}\label{classGameObject_aa08869921287057b06c7f2ae89eef9ab}} 
+\index{Game\+Object@{Game\+Object}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{set\+Height()}{setHeight()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+sets the height 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & An int that is supposed to be the height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameObject_a728c8a03416fd7bde2498d79ae6c26a3}\label{classGameObject_a728c8a03416fd7bde2498d79ae6c26a3}} 
+\index{Game\+Object@{Game\+Object}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets the name of the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The string that is the name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameObject_a0d9759f01e8098149ce3e69cb8878534}\label{classGameObject_a0d9759f01e8098149ce3e69cb8878534}} 
+\index{Game\+Object@{Game\+Object}!set\+Texture\+Path@{set\+Texture\+Path}}
+\index{set\+Texture\+Path@{set\+Texture\+Path}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{set\+Texture\+Path()}{setTexturePath()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Texture\+Path (\begin{DoxyParamCaption}\item[{const string \&}]{texture\+Path }\end{DoxyParamCaption})}
+
+
+
+Setter for texture path of the object. 
+
+Also check if the texture can be loaded, and loads it into m\+\_\+texture if possible. If the texture is loaded, the sprite will be initialized. 
+\begin{DoxyParams}{Parameters}
+{\em texture\+Path} & Texture path of the object\\
+\hline
+{\em texture\+Path} & Texture path of the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGameObject_aea1d6398e4b66af6987c24e7728463ad}\label{classGameObject_aea1d6398e4b66af6987c24e7728463ad}} 
+\index{Game\+Object@{Game\+Object}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Game\+Object@{Game\+Object}}
+\subsubsection{\texorpdfstring{set\+Width()}{setWidth()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Setter of the width. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The int that is supposed to be the width \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Game\+Object.\+h\item 
+src/Game\+Object.\+cpp\end{DoxyCompactItemize}

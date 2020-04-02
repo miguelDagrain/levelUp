@@ -1,0 +1,61 @@
+idee1:
+geef alle nodige variabele een "actie" als in Q1->@[game] dan gaat Q1 actie leesgame hebben
+daarna maak voor ieder actie een aparte functie wat eigenlijk terug dezelfde parsefunctie alleen wordt de stack op alleen dat symbool gezet en stopt het niet tot de stack leeg is of er een symbool is dat niet kan
+als de input leeg is maar de stack niet dan wordt er een exception gesmeten
+dit gebeurt ook als je in de root zit en je een symbool hebt dat niet gelezen kan worden
+input wordt hier per reference meegegeven
+zo wordt er recursief alles ingelezen
+er moet ook een end instructie zijn om een recursie niveau terug te stappen als je bv een } tegenkomt
+
+idee2:
+parse gewoon maar hoe een vector bij die alle actions en laat als enige dat direct geparsed wordt de numbers en alphabet zijn
+dus als je Q1->@[game] tegenkomt push het een makegame functie dan parse het alpha voor de naam, stel naam is "speleke" dan pusht het dat
+bij het overlopen van de instructies gaat het eerst makegame zien en weet het dat in het volgende dan de naam moet zitten dus neemt het dat gewoon
+er moet ook een end instructie zijn om een recursie niveau terug te stappen als je bv een } tegenkomt
+
+
+benodigte acties (zijn voor beide ideen hetzelfde)
+    basis:
+        Readalphabet
+        readNumber (moet doubles lezen)
+        readBool
+    gameObject variabelen zullen apart staan omdat deze toch voor alles hetzelfde zijn en het nutteloos zou zijn om deze iedere keer opnieuw te maken
+    er gaat ook geen aparte makegameobject zijn, er worden alleen maar afgeleide objecten zijn die via abstract factory worden gemaakt
+    gameObject:
+        setColor:3 numbers
+        setWidth:1 number
+        setHeight:1 number
+
+    de Game klasse inherit van de gameObject klasse
+    Game:
+        addLevel:1 Level(nieuwe functie die level parsed wordt opgeroepen
+        addObject:1 Level(nieuwe functie die Object parsed wordt opgeroepen
+        addEntity:1 Level(nieuwe functie die Entity parsed wordt opgeroepen
+        setBackground: ??modified word??
+
+    de object classe inherit van de gameObject classe
+    Object:
+        setCollide:1 bool
+        setLocation: 2 numbers
+        addObject:1 object (als er addobject staat terwijl je nog bezig bent met een object te lezen dan wordt dit nieuw object toegevoegd als subobject)
+
+    de Entity klasse inherit van de gameObject klasse
+    Entity:
+        setMovementSpeed:1 number
+        setJumpHeight:1 number
+        setLocation:2 numbers
+        setTexturPath: ??modified word??
+        setPathing: playercontrolled/enemy/frriend/...
+    de level klasse inherit van gameobject klasse
+    level:
+        setEndlocation:3 numbers
+        setEndColor:1 number
+        setEndWidth:1 number
+        setEndHeight:1 number
+        deze 4 dinges kunnen ook onder een object gezet worden
+        setEndGoto:word (dit woord is oftewel de naam van een level of het is het woord "end" als het end is dan eeindigt het spel)
+
+
+
+
+

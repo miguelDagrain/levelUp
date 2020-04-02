@@ -1,0 +1,279 @@
+\hypertarget{classLevel}{}\section{Level Class Reference}
+\label{classLevel}\index{Level@{Level}}
+
+
+Represents a level of the game.  
+
+
+
+
+{\ttfamily \#include $<$Level.\+h$>$}
+
+
+
+Inheritance diagram for Level\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classLevel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Level\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classLevel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLevel_a7a696c928ca5d5354db6e50e46d0f67d}\label{classLevel_a7a696c928ca5d5354db6e50e46d0f67d}} 
+\hyperlink{classLevel_a7a696c928ca5d5354db6e50e46d0f67d}{Level} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+\hyperlink{classLevel_a0bf031e33189b15e8ba66d8879fe3f34}{Level} (const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$$>$ \&entities, const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&objects, const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&end\+Object)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+\hyperlink{classLevel_ad71d8c6cdc4cb49a4f9be2c3db35ab20}{Level} (int width, int height, const shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$ \&color, const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$$>$ \&entities, const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&objects, const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&end\+Object)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+\hyperlink{classLevel_a4c7d4e89ea59866f0fc760b382cedaec}{Level} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor for the level taking the name of the level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLevel_ac4103beac366d4c7649f959d8d9f780e}\label{classLevel_ac4103beac366d4c7649f959d8d9f780e}} 
+\hyperlink{classLevel_ac4103beac366d4c7649f959d8d9f780e}{$\sim$\+Level} () override
+\begin{DoxyCompactList}\small\item\em Default destructor for \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$ $>$ \& \hyperlink{classLevel_a2497cf10395346c9b0cf2ed193ec46d4}{get\+Entities} () const
+\begin{DoxyCompactList}\small\item\em Getter for Entities of the \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ $>$ \& \hyperlink{classLevel_aeb10cc133bd8e5bb64dfa98184a8dc6f}{get\+Objects} () const
+\begin{DoxyCompactList}\small\item\em Getter for Objects of the \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \& \hyperlink{classLevel_abbd8e0af36ea7ddd23a5f340add7771f}{get\+End\+Object} () const
+\begin{DoxyCompactList}\small\item\em Getter of end object of the level. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_a24ca4848bfd4b00f02f677f12cda9fcf}{set\+Entities} (const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$$>$ \&entities)
+\begin{DoxyCompactList}\small\item\em Setter for Entities of the \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_a82746a551f849962e642c288ab58b93c}{set\+Objects} (const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&objects)
+\begin{DoxyCompactList}\small\item\em Setter for Objects of the \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_a74205a71e7c437a989666af24435bf67}{set\+End\+Object} (const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&end\+Object)
+\begin{DoxyCompactList}\small\item\em Setter for the end object of the \hyperlink{classLevel}{Level}. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_a3effcc660e97c964a7782231f20fa6d3}{add\+Object} (const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&obj)
+\begin{DoxyCompactList}\small\item\em Adds an object to the object list. \end{DoxyCompactList}\item 
+void \hyperlink{classLevel_a481a39fdf7392703fc4e3c5715ddfa55}{add\+Entity} (const shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$ \&ent)
+\begin{DoxyCompactList}\small\item\em Adds an entity to the entity list. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$ \hyperlink{classLevel_ad8047f23492bae60e0b7305e7efff0c1}{get\+Player} () const
+\begin{DoxyCompactList}\small\item\em Searches for the player in the list of entities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a level of the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLevel_a0bf031e33189b15e8ba66d8879fe3f34}\label{classLevel_a0bf031e33189b15e8ba66d8879fe3f34}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$$>$ \&}]{entities,  }\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&}]{objects,  }\item[{const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&}]{end\+Object }\end{DoxyParamCaption})}
+
+
+
+Constructor for \hyperlink{classLevel}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & Entities in the \hyperlink{classLevel}{Level} \\
+\hline
+{\em objects} & Objects in the \hyperlink{classLevel}{Level} \\
+\hline
+{\em end\+Object} & \hyperlink{classObject}{Object} which indicates the end of the level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_ad71d8c6cdc4cb49a4f9be2c3db35ab20}\label{classLevel_ad71d8c6cdc4cb49a4f9be2c3db35ab20}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const shared\+\_\+ptr$<$ \hyperlink{structColor}{Color} $>$ \&}]{color,  }\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$$>$ \&}]{entities,  }\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&}]{objects,  }\item[{const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&}]{end\+Object }\end{DoxyParamCaption})}
+
+
+
+Constructor for \hyperlink{classLevel}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the level \\
+\hline
+{\em height} & Height of the level \\
+\hline
+{\em color} & \hyperlink{structColor}{Color} of the level \\
+\hline
+{\em entities} & Entities of the level \\
+\hline
+{\em objects} & Objects of the level \\
+\hline
+{\em end\+Object} & Endobject of the level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_a4c7d4e89ea59866f0fc760b382cedaec}\label{classLevel_a4c7d4e89ea59866f0fc760b382cedaec}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for the level taking the name of the level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the level \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLevel_a481a39fdf7392703fc4e3c5715ddfa55}\label{classLevel_a481a39fdf7392703fc4e3c5715ddfa55}} 
+\index{Level@{Level}!add\+Entity@{add\+Entity}}
+\index{add\+Entity@{add\+Entity}!Level@{Level}}
+\subsubsection{\texorpdfstring{add\+Entity()}{addEntity()}}
+{\footnotesize\ttfamily void Level\+::add\+Entity (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$ \&}]{ent }\end{DoxyParamCaption})}
+
+
+
+Adds an entity to the entity list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent} & \hyperlink{classEntity}{Entity} to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_a3effcc660e97c964a7782231f20fa6d3}\label{classLevel_a3effcc660e97c964a7782231f20fa6d3}} 
+\index{Level@{Level}!add\+Object@{add\+Object}}
+\index{add\+Object@{add\+Object}!Level@{Level}}
+\subsubsection{\texorpdfstring{add\+Object()}{addObject()}}
+{\footnotesize\ttfamily void Level\+::add\+Object (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+Adds an object to the object list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \hyperlink{classObject}{Object} to add to the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_abbd8e0af36ea7ddd23a5f340add7771f}\label{classLevel_abbd8e0af36ea7ddd23a5f340add7771f}} 
+\index{Level@{Level}!get\+End\+Object@{get\+End\+Object}}
+\index{get\+End\+Object@{get\+End\+Object}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+End\+Object()}{getEndObject()}}
+{\footnotesize\ttfamily const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \& Level\+::get\+End\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter of end object of the level. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_a2497cf10395346c9b0cf2ed193ec46d4}\label{classLevel_a2497cf10395346c9b0cf2ed193ec46d4}} 
+\index{Level@{Level}!get\+Entities@{get\+Entities}}
+\index{get\+Entities@{get\+Entities}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Entities()}{getEntities()}}
+{\footnotesize\ttfamily const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$ $>$ \& Level\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for Entities of the \hyperlink{classLevel}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+Vector of entities 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_aeb10cc133bd8e5bb64dfa98184a8dc6f}\label{classLevel_aeb10cc133bd8e5bb64dfa98184a8dc6f}} 
+\index{Level@{Level}!get\+Objects@{get\+Objects}}
+\index{get\+Objects@{get\+Objects}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Objects()}{getObjects()}}
+{\footnotesize\ttfamily const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ $>$ \& Level\+::get\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for Objects of the \hyperlink{classLevel}{Level}. 
+
+\begin{DoxyReturn}{Returns}
+vector of objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_ad8047f23492bae60e0b7305e7efff0c1}\label{classLevel_ad8047f23492bae60e0b7305e7efff0c1}} 
+\index{Level@{Level}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!Level@{Level}}
+\subsubsection{\texorpdfstring{get\+Player()}{getPlayer()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$ Level\+::get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Searches for the player in the list of entities. 
+
+\begin{DoxyReturn}{Returns}
+shared pointer to entity that represents the player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_a74205a71e7c437a989666af24435bf67}\label{classLevel_a74205a71e7c437a989666af24435bf67}} 
+\index{Level@{Level}!set\+End\+Object@{set\+End\+Object}}
+\index{set\+End\+Object@{set\+End\+Object}!Level@{Level}}
+\subsubsection{\texorpdfstring{set\+End\+Object()}{setEndObject()}}
+{\footnotesize\ttfamily void Level\+::set\+End\+Object (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ \&}]{end\+Object }\end{DoxyParamCaption})}
+
+
+
+Setter for the end object of the \hyperlink{classLevel}{Level}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em end\+Object} & End object of the \hyperlink{classLevel}{Level} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_a24ca4848bfd4b00f02f677f12cda9fcf}\label{classLevel_a24ca4848bfd4b00f02f677f12cda9fcf}} 
+\index{Level@{Level}!set\+Entities@{set\+Entities}}
+\index{set\+Entities@{set\+Entities}!Level@{Level}}
+\subsubsection{\texorpdfstring{set\+Entities()}{setEntities()}}
+{\footnotesize\ttfamily void Level\+::set\+Entities (\begin{DoxyParamCaption}\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classEntity}{Entity} $>$$>$ \&}]{entities }\end{DoxyParamCaption})}
+
+
+
+Setter for Entities of the \hyperlink{classLevel}{Level}. 
+
+sets the entities
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & Entities of the \hyperlink{classLevel}{Level}\\
+\hline
+{\em a} & vector of entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_a82746a551f849962e642c288ab58b93c}\label{classLevel_a82746a551f849962e642c288ab58b93c}} 
+\index{Level@{Level}!set\+Objects@{set\+Objects}}
+\index{set\+Objects@{set\+Objects}!Level@{Level}}
+\subsubsection{\texorpdfstring{set\+Objects()}{setObjects()}}
+{\footnotesize\ttfamily void Level\+::set\+Objects (\begin{DoxyParamCaption}\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&}]{objects }\end{DoxyParamCaption})}
+
+
+
+Setter for Objects of the \hyperlink{classLevel}{Level}. 
+
+sets the objects
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & Objects of the \hyperlink{classLevel}{Level}\\
+\hline
+{\em vector} & of objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Level.\+h\item 
+src/Level.\+cpp\end{DoxyCompactItemize}

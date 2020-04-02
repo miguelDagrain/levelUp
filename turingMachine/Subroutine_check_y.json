@@ -1,0 +1,25 @@
+{
+  "States": ["q5", "q6", "q7", "q8"],
+  "InputAlphabet": ["3", "y", "Y"],
+  "TapeAlphabet": ["3", "y", "Y", "B"],
+
+  "Tapes": 2,
+
+  "Transitions": [
+    {"from": "q5", "read": ["y", "y"], "to": "q5", "write": ["y", "y"], "direction": ["right", "right"]},
+    {"from": "q5", "read": ["y", "Y"], "to": "q6", "write": ["y", "Y"], "direction": ["right", "right"]},
+    {"from": "q6", "read": ["y", "Y"], "to": "q6", "write": ["y", "Y"], "direction": ["right", "right"]},
+    {"from": "q5", "read": ["Y", "y"], "to": "q7", "write": ["Y", "y"], "direction": ["right", "right"]},
+    {"from": "q7", "read": ["Y", "y"], "to": "q7", "write": ["Y", "y"], "direction": ["right", "right"]},
+    {"from": "q6", "read": ["y", "3"], "to": "q8", "write": ["y", "3"], "direction": ["stay", "stay"]},
+    {"from": "q7", "read": ["3", "y"], "to": "q8", "write": ["3", "y"], "direction": ["stay", "stay"]},
+    {"from": "q8", "read": ["3", "y"], "to": "q8", "write": ["3", "y"], "direction": ["stay", "right"]},
+    {"from": "q8", "read": ["3", "Y"], "to": "q8", "write": ["3", "Y"], "direction": ["stay", "right"]},
+    {"from": "q8", "read": ["y", "3"], "to": "q8", "write": ["y", "3"], "direction": ["right", "stay"]},
+    {"from": "q8", "read": ["Y", "3"], "to": "q8", "write": ["Y", "3"], "direction": ["right", "stay"]}
+  ],
+
+  "StartState": "q5",
+  "Blank": "B",
+  "FinalStates": ["q8"]
+}

@@ -1,0 +1,33 @@
+Als u uw eigen level wilt maken, zal u een bestand van volgend formaat moeten maken:
+(Let op als u meerdere levels of entiteiten of eigenschappen wilt inlezen u voor elke niet-laatste input een ! schrijft )
+spel_naam[game]{
+level_naam[level]{
+    !width:num,
+    !height:num,
+    !color:(num, num, num),
+    !+player[entity]{
+	   !location:(num ,num),
+     	   !width:num,
+     	   !height: num,
+   	   !pathing:playercontrolled,
+   	   !color:(num, num, num),
+           !texture:dog,
+    	   !movement: num,
+      	   jumpheight: num	
+	},
+    !+object_name[object]{
+        !location:(num, num),
+        !width: num,
+        !height: num,
+        !hitbox:true,
+        color:(num, num, num)
+    },
+    +einde[continue]{
+        !location:(num, num),
+        !color:(num, num, num),
+        !width: num,
+        !height: num,
+        goto:win
+    }
+}
+}

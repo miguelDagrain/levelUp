@@ -1,0 +1,64 @@
+\hypertarget{classLevelUp}{}\section{Level\+Up Class Reference}
+\label{classLevelUp}\index{Level\+Up@{Level\+Up}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classLevelUp_abfbb1057ebe51f215fbcbdb61a887f85}{parse\+Arguments} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em this file parses the arguments given \end{DoxyCompactList}\item 
+static void \hyperlink{classLevelUp_a749a173244e4485b7eea1bd4ed68bf8a}{check\+Files} ()
+\begin{DoxyCompactList}\small\item\em This function checks if all files for the Turing machine and ll parser exist and if not they don\textquotesingle{}t then a function is called to create them. \end{DoxyCompactList}\item 
+static void \hyperlink{classLevelUp_afee839cbfb2300f6229b4d82bbf2c269}{run\+Game} (std\+::string level\+File\+Path, bool debug)
+\begin{DoxyCompactList}\small\item\em This function actually runs and parses the game file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLevelUp_a749a173244e4485b7eea1bd4ed68bf8a}\label{classLevelUp_a749a173244e4485b7eea1bd4ed68bf8a}} 
+\index{Level\+Up@{Level\+Up}!check\+Files@{check\+Files}}
+\index{check\+Files@{check\+Files}!Level\+Up@{Level\+Up}}
+\subsubsection{\texorpdfstring{check\+Files()}{checkFiles()}}
+{\footnotesize\ttfamily void Level\+Up\+::check\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This function checks if all files for the Turing machine and ll parser exist and if not they don\textquotesingle{}t then a function is called to create them. 
+
+this function checks if all files for the Turing machine and ll parser exist and if not they don\textquotesingle{}t then a function is called to create them \mbox{\Hypertarget{classLevelUp_abfbb1057ebe51f215fbcbdb61a887f85}\label{classLevelUp_abfbb1057ebe51f215fbcbdb61a887f85}} 
+\index{Level\+Up@{Level\+Up}!parse\+Arguments@{parse\+Arguments}}
+\index{parse\+Arguments@{parse\+Arguments}!Level\+Up@{Level\+Up}}
+\subsubsection{\texorpdfstring{parse\+Arguments()}{parseArguments()}}
+{\footnotesize\ttfamily void Level\+Up\+::parse\+Arguments (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+this file parses the arguments given 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & amount of arguments \\
+\hline
+{\em argv} & the arguments\\
+\hline
+\end{DoxyParams}
+The first argument must always be a filename were the level is Second argument can be -\/debug to run debug mode were output is given from ll parser and Turing machines \mbox{\Hypertarget{classLevelUp_afee839cbfb2300f6229b4d82bbf2c269}\label{classLevelUp_afee839cbfb2300f6229b4d82bbf2c269}} 
+\index{Level\+Up@{Level\+Up}!run\+Game@{run\+Game}}
+\index{run\+Game@{run\+Game}!Level\+Up@{Level\+Up}}
+\subsubsection{\texorpdfstring{run\+Game()}{runGame()}}
+{\footnotesize\ttfamily void Level\+Up\+::run\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{level\+File\+Path,  }\item[{bool}]{debug }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This function actually runs and parses the game file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+File\+Path} & the path the the file that contains the game \\
+\hline
+{\em debug} & a bool that say whether output from llparser and turing machine must be given or not \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Level\+Up.\+h\item 
+src/Level\+Up.\+cpp\end{DoxyCompactItemize}

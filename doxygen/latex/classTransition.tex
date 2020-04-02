@@ -1,0 +1,114 @@
+\hypertarget{classTransition}{}\section{Transition Class Reference}
+\label{classTransition}\index{Transition@{Transition}}
+
+
+Class which represents a Turing machine transition.  
+
+
+
+
+{\ttfamily \#include $<$Turing\+Machine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTransition_af32acfec1e8d6b27dee2634e538731f3}{Transition} (\hyperlink{classState}{State} $\ast$to, std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&\&input, std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&\&write, std\+::vector$<$ Direction $>$ \&\&directions)
+\begin{DoxyCompactList}\small\item\em Constructor for transition. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$$>$ \hyperlink{classTransition_ab7c192c99fa344b7c629b7a570ae148e}{get\+\_\+input\+\_\+symbols} () const
+\begin{DoxyCompactList}\small\item\em Getter for input symbols. \end{DoxyCompactList}\item 
+const \hyperlink{classState}{State} $\ast$ \hyperlink{classTransition_ae355340b9b802d1783fe3d596e9f1f6d}{get\+\_\+next\+\_\+state} () const
+\begin{DoxyCompactList}\small\item\em Getter for the next state. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \hyperlink{classTransition_a313ac6ed2730925df3c79eb2ad0ca2b8}{get\+\_\+write\+\_\+symbols} () const
+\begin{DoxyCompactList}\small\item\em Getter for the write symbols. \end{DoxyCompactList}\item 
+std\+::vector$<$ Direction $>$ \hyperlink{classTransition_a0d4ad2ca5300f0ff1ef6d57f0d40c0f8}{get\+\_\+direction} () const
+\begin{DoxyCompactList}\small\item\em Getter for the direction of the \hyperlink{classTransition}{Transition}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which represents a Turing machine transition. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransition_af32acfec1e8d6b27dee2634e538731f3}\label{classTransition_af32acfec1e8d6b27dee2634e538731f3}} 
+\index{Transition@{Transition}!Transition@{Transition}}
+\index{Transition@{Transition}!Transition@{Transition}}
+\subsubsection{\texorpdfstring{Transition()}{Transition()}}
+{\footnotesize\ttfamily Transition\+::\+Transition (\begin{DoxyParamCaption}\item[{\hyperlink{classState}{State} $\ast$}]{to,  }\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&\&}]{input,  }\item[{std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ \&\&}]{write,  }\item[{std\+::vector$<$ Direction $>$ \&\&}]{directions }\end{DoxyParamCaption})}
+
+
+
+Constructor for transition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & state from where the finite control starts \\
+\hline
+{\em to} & state to where the finite control goes \\
+\hline
+{\em input} & inputsymbol to trigger this transition \\
+\hline
+{\em write} & tapesymbol to write on the tape \\
+\hline
+{\em direction} & direction of the head movement for this transition \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransition_a0d4ad2ca5300f0ff1ef6d57f0d40c0f8}\label{classTransition_a0d4ad2ca5300f0ff1ef6d57f0d40c0f8}} 
+\index{Transition@{Transition}!get\+\_\+direction@{get\+\_\+direction}}
+\index{get\+\_\+direction@{get\+\_\+direction}!Transition@{Transition}}
+\subsubsection{\texorpdfstring{get\+\_\+direction()}{get\_direction()}}
+{\footnotesize\ttfamily std\+::vector$<$ Direction $>$ Transition\+::get\+\_\+direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the direction of the \hyperlink{classTransition}{Transition}. 
+
+\begin{DoxyReturn}{Returns}
+Directions of the \hyperlink{classTransition}{Transition} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransition_ab7c192c99fa344b7c629b7a570ae148e}\label{classTransition_ab7c192c99fa344b7c629b7a570ae148e}} 
+\index{Transition@{Transition}!get\+\_\+input\+\_\+symbols@{get\+\_\+input\+\_\+symbols}}
+\index{get\+\_\+input\+\_\+symbols@{get\+\_\+input\+\_\+symbols}!Transition@{Transition}}
+\subsubsection{\texorpdfstring{get\+\_\+input\+\_\+symbols()}{get\_input\_symbols()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ Transition\+::get\+\_\+input\+\_\+symbols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for input symbols. 
+
+\begin{DoxyReturn}{Returns}
+Vector of input symbols 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransition_ae355340b9b802d1783fe3d596e9f1f6d}\label{classTransition_ae355340b9b802d1783fe3d596e9f1f6d}} 
+\index{Transition@{Transition}!get\+\_\+next\+\_\+state@{get\+\_\+next\+\_\+state}}
+\index{get\+\_\+next\+\_\+state@{get\+\_\+next\+\_\+state}!Transition@{Transition}}
+\subsubsection{\texorpdfstring{get\+\_\+next\+\_\+state()}{get\_next\_state()}}
+{\footnotesize\ttfamily const \hyperlink{classState}{State} $\ast$ Transition\+::get\+\_\+next\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the next state. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the next state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransition_a313ac6ed2730925df3c79eb2ad0ca2b8}\label{classTransition_a313ac6ed2730925df3c79eb2ad0ca2b8}} 
+\index{Transition@{Transition}!get\+\_\+write\+\_\+symbols@{get\+\_\+write\+\_\+symbols}}
+\index{get\+\_\+write\+\_\+symbols@{get\+\_\+write\+\_\+symbols}!Transition@{Transition}}
+\subsubsection{\texorpdfstring{get\+\_\+write\+\_\+symbols()}{get\_write\_symbols()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classTapeSymbol}{Tape\+Symbol} $\ast$ $>$ Transition\+::get\+\_\+write\+\_\+symbols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the write symbols. 
+
+\begin{DoxyReturn}{Returns}
+Vector of write symbols 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Turing\+Machine.\+h\item 
+src/Turing\+Machine.\+cpp\end{DoxyCompactItemize}

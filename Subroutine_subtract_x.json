@@ -1,0 +1,25 @@
+{
+  "States": ["s_subtract_1", "s_subtract_2", "s_subtract_3", "s_subtract_4", "s_subtract_5", "s_subtract_6", "s_subtract_7"],
+  "InputAlphabet": ["1", "x", "X", "U", "2", "y", "Y", "3", "-"],
+  "TapeAlphabet": ["1", "x", "X", "U", "2", "y", "Y", "3", "-", "B"],
+
+  "Transitions": [
+    {"from": "s_subtract_1", "read": ["-"], "to": "s_subtract_1", "write": ["B"], "direction": ["left"]},
+    {"from": "s_subtract_1", "read": ["3"], "to": "s_subtract_1", "write": ["B"], "direction": ["left"]},
+    {"from": "s_subtract_1", "read": ["Y"], "to": "s_subtract_2", "write": ["3"], "direction": ["left"]},
+    {"from": "s_subtract_2", "read": ["Y"], "to": "s_subtract_2", "write": ["Y"], "direction": ["left"]},
+    {"from": "s_subtract_2", "read": ["y"], "to": "s_subtract_3", "write": ["Y"], "direction": ["left"]},
+    {"from": "s_subtract_3", "read": ["y"], "to": "s_subtract_3", "write": ["y"], "direction": ["left"]},
+    {"from": "s_subtract_3", "read": ["2"], "to": "s_subtract_4", "write": ["y"], "direction": ["left"]},
+    {"from": "s_subtract_4", "read": ["U"], "to": "s_subtract_4", "write": ["2"], "direction": ["left"]},
+    {"from": "s_subtract_4", "read": ["X"], "to": "s_subtract_5", "write": ["U"], "direction": ["left"]},
+    {"from": "s_subtract_5", "read": ["X"], "to": "s_subtract_5", "write": ["X"], "direction": ["left"]},
+    {"from": "s_subtract_5", "read": ["x"], "to": "s_subtract_6", "write": ["X"], "direction": ["left"]},
+    {"from": "s_subtract_6", "read": ["x"], "to": "s_subtract_6", "write": ["x"], "direction": ["left"]},
+    {"from": "s_subtract_6", "read": ["1"], "to": "s_subtract_7", "write": ["1"], "direction": ["left"]}
+  ],
+
+  "StartState": "s_subtract_1",
+  "Blank": "B",
+  "FinalStates": ["s_subtract_7"]
+}

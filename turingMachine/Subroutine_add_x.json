@@ -1,0 +1,28 @@
+{
+  "States": ["s_add_1", "s_add_2", "s_add_3", "s_add_4", "s_add_5"],
+  "InputAlphabet": ["1", "x", "X", "U", "2", "y", "Y", "3", "+"],
+  "TapeAlphabet": ["1", "x", "X", "U", "2", "y", "Y", "3", "+", "B"],
+
+  "Transitions": [
+    {"from": "s_add_1", "read": ["+"], "to": "s_add_1", "write": ["3"], "direction": ["left"]},
+    {"from": "s_add_1", "read": ["3"], "to": "s_add_1", "write": ["Y"], "direction": ["left"]},
+    {"from": "s_add_1", "read": ["Y"], "to": "s_add_1", "write": ["Y"], "direction": ["left"]},
+    {"from": "s_add_1", "read": ["y"], "to": "s_add_2", "write": ["y"], "direction": ["right"]},
+    {"from": "s_add_2", "read": ["Y"], "to": "s_add_2", "write": ["y"], "direction": ["left"]},
+    {"from": "s_add_2", "read": ["y"], "to": "s_add_2", "write": ["y"], "direction": ["left"]},
+    {"from": "s_add_2", "read": ["2"], "to": "s_add_3", "write": ["2"], "direction": ["right"]},
+    {"from": "s_add_3", "read": ["y"], "to": "s_add_3", "write": ["2"], "direction": ["left"]},
+    {"from": "s_add_3", "read": ["2"], "to": "s_add_3", "write": ["U"], "direction": ["left"]},
+    {"from": "s_add_3", "read": ["U"], "to": "s_add_3", "write": ["X"], "direction": ["left"]},
+    {"from": "s_add_3", "read": ["X"], "to": "s_add_3", "write": ["X"], "direction": ["left"]},
+    {"from": "s_add_3", "read": ["x"], "to": "s_add_4", "write": ["x"], "direction": ["right"]},
+    {"from": "s_add_3", "read": ["1"], "to": "s_add_4", "write": ["1"], "direction": ["right"]},
+    {"from": "s_add_4", "read": ["X"], "to": "s_add_4", "write": ["x"], "direction": ["left"]},
+    {"from": "s_add_4", "read": ["x"], "to": "s_add_4", "write": ["x"], "direction": ["left"]},
+    {"from": "s_add_4", "read": ["1"], "to": "s_add_5", "write": ["1"], "direction": ["left"]}
+  ],
+
+  "StartState": "s_add_1",
+  "Blank": "B",
+  "FinalStates": ["s_add_5"]
+}

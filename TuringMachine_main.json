@@ -1,0 +1,41 @@
+{
+  "States": ["q0", "q9", "q10", "q11", "q12", "q15"],
+  "InputAlphabet": ["1", "2", "3", "x", "X", "y", "Y", "U","P", "F"],
+  "TapeAlphabet": ["1", "2", "3", "x", "X", "y", "Y", "U", "P", "F", "B"],
+
+  "Tapes": 2,
+
+  "Transitions":[
+    {"from":"q0", "read": ["B", "B"], "to": "q0", "write": ["B", "B"], "direction": ["right", "right"]},
+    {"from":"q10", "read": ["3", "B"], "to": "q12", "write": ["3", "B"], "direction": ["stay", "stay"]},
+    {"from":"q10", "read": ["3", "1"], "to": "q11", "write": ["3", "1"], "direction": ["left", "stay"]},
+    {"from":"q11", "read": ["2", "1"], "to": "q11", "write": ["2", "1"], "direction": ["left", "stay"]},
+    {"from":"q11", "read": ["x", "1"], "to": "q11", "write": ["x", "1"], "direction": ["left", "stay"]},
+    {"from":"q11", "read": ["X", "1"], "to": "q11", "write": ["X", "1"], "direction": ["left", "stay"]},
+    {"from":"q11", "read": ["y", "1"], "to": "q11", "write": ["y", "1"], "direction": ["left", "stay"]},
+    {"from":"q11", "read": ["Y", "1"], "to": "q11", "write": ["Y", "1"], "direction": ["left", "stay"]},
+    {"from":"q11", "read": ["U", "1"], "to": "q11", "write": ["U", "1"], "direction": ["left", "stay"]},
+    {"from":"q11", "read": ["1", "1"], "to": "q0", "write": ["1", "1"], "direction": ["stay", "stay"]},
+    {"from": "q9", "read": ["F", "2"], "to": "q9", "write": ["U", "2"], "direction": ["right", "stay"]},
+    {"from": "q9", "read": ["P", "2"], "to": "q15", "write": ["U", "2"], "direction": ["right", "stay"]},
+    {"from": "q15", "read": ["2", "2"], "to": "q15", "write": ["2", "2"], "direction": ["right", "right"]},
+    {"from": "q15", "read": ["y", "y"], "to": "q15", "write": ["y", "y"], "direction": ["right", "right"]},
+    {"from": "q15", "read": ["Y", "y"], "to": "q15", "write": ["Y", "y"], "direction": ["right", "right"]},
+    {"from": "q15", "read": ["y", "Y"], "to": "q15", "write": ["y", "Y"], "direction": ["right", "right"]},
+    {"from": "q15", "read": ["Y", "Y"], "to": "q15", "write": ["Y", "Y"], "direction": ["right", "right"]},
+    {"from": "q15", "read": ["3", "y"], "to": "q15", "write": ["3", "y"], "direction": ["stay", "right"]},
+    {"from": "q15", "read": ["3", "Y"], "to": "q15", "write": ["3", "Y"], "direction": ["stay", "right"]},
+    {"from": "q15", "read": ["y", "3"], "to": "q15", "write": ["y", "3"], "direction": ["right", "stay"]},
+    {"from": "q15", "read": ["Y", "3"], "to": "q15", "write": ["Y", "3"], "direction": ["right", "stay"]},
+    {"from": "q15", "read": ["3", "3"], "to": "q10", "write": ["3", "3"], "direction": ["stay", "right"]}
+  ],
+
+  "StartState": "q0",
+  "Blank": "B",
+  "FinalStates": ["q12"],
+
+  "Subroutines": [
+    {"from": "q0", "readFrom": ["1", "1"], "writeFrom": ["1", "1"], "directionFrom": ["right", "right"], "to": "q9", "readTo": ["2", "2"], "writeTo": ["2", "2"], "directionTo": ["left", "stay"], "subroutine_file": "./Subroutine_check_x.json"},
+    {"from": "q9", "readFrom": ["2", "2"], "writeFrom": ["2", "2"], "directionFrom": ["right", "right"], "to": "q10", "readTo": ["3", "3"], "writeTo": ["3", "3"], "directionTo": ["stay", "right"], "subroutine_file": "./Subroutine_check_y.json"}
+  ]
+}

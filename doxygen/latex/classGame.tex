@@ -1,0 +1,121 @@
+\hypertarget{classGame}{}\section{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+This class is the container of the game.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Inheritance diagram for Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classGame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_a4735989677c1cab18866f3ae4ee0aa1c}\label{classGame_a4735989677c1cab18866f3ae4ee0aa1c}} 
+\hyperlink{classGame_a4735989677c1cab18866f3ae4ee0aa1c}{Game} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for the game. \end{DoxyCompactList}\item 
+\hyperlink{classGame_a390a5384cd8ed6839148d036499b2d95}{Game} (const std\+::string \&game\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor of the game that takes the name of the game as inut. \end{DoxyCompactList}\item 
+void \hyperlink{classGame_aa85c4d8154aff77cd064b859ea6c1da2}{add\+Level} (shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ level)
+\begin{DoxyCompactList}\small\item\em Adds a level to the game. \end{DoxyCompactList}\item 
+void \hyperlink{classGame_ad130d02a37e7754ff619d8b28c5d52ea}{set\+Levels} (const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$$>$ \&levels)
+\begin{DoxyCompactList}\small\item\em Sets the levels of the game. \end{DoxyCompactList}\item 
+const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ $>$ \& \hyperlink{classGame_a7054929dc897593d0d5bace74398df9b}{get\+Levels} () const
+\begin{DoxyCompactList}\small\item\em Returns a level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a09ffcdf9d805fd9a407f68865661373d}\label{classGame_a09ffcdf9d805fd9a407f68865661373d}} 
+\hyperlink{classGame_a09ffcdf9d805fd9a407f68865661373d}{$\sim$\+Game} () override=default
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is the container of the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_a390a5384cd8ed6839148d036499b2d95}\label{classGame_a390a5384cd8ed6839148d036499b2d95}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{game\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor of the game that takes the name of the game as inut. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & String that is the name of the game \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_aa85c4d8154aff77cd064b859ea6c1da2}\label{classGame_aa85c4d8154aff77cd064b859ea6c1da2}} 
+\index{Game@{Game}!add\+Level@{add\+Level}}
+\index{add\+Level@{add\+Level}!Game@{Game}}
+\subsubsection{\texorpdfstring{add\+Level()}{addLevel()}}
+{\footnotesize\ttfamily void Game\+::add\+Level (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$}]{level }\end{DoxyParamCaption})}
+
+
+
+Adds a level to the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & a pointer to a new level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a7054929dc897593d0d5bace74398df9b}\label{classGame_a7054929dc897593d0d5bace74398df9b}} 
+\index{Game@{Game}!get\+Levels@{get\+Levels}}
+\index{get\+Levels@{get\+Levels}!Game@{Game}}
+\subsubsection{\texorpdfstring{get\+Levels()}{getLevels()}}
+{\footnotesize\ttfamily const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$ $>$ \& Game\+::get\+Levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns a level. 
+
+\begin{DoxyReturn}{Returns}
+a shared pointer to the levels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_ad130d02a37e7754ff619d8b28c5d52ea}\label{classGame_ad130d02a37e7754ff619d8b28c5d52ea}} 
+\index{Game@{Game}!set\+Levels@{set\+Levels}}
+\index{set\+Levels@{set\+Levels}!Game@{Game}}
+\subsubsection{\texorpdfstring{set\+Levels()}{setLevels()}}
+{\footnotesize\ttfamily void Game\+::set\+Levels (\begin{DoxyParamCaption}\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classLevel}{Level} $>$$>$ \&}]{levels }\end{DoxyParamCaption})}
+
+
+
+Sets the levels of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em levels} & a shared pointer to the levels \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Game.\+h\item 
+src/Game.\+cpp\end{DoxyCompactItemize}

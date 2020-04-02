@@ -1,0 +1,9 @@
+{
+	"Variables": ["S"],
+	"Terminals": ["a", "b"],
+	"Productions": [
+		{"head": "S", "body": ["a", "S", "b"],"action":"testAction"},
+		{"head": "S", "body": ["a"],"action":""}
+	],
+	"Start": "S"
+}

@@ -1,0 +1,518 @@
+\hypertarget{classCFG}{}\section{C\+FG Class Reference}
+\label{classCFG}\index{C\+FG@{C\+FG}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCFG_aaa7b7d1a1686837e3adbad02a60c7222}{C\+FG} (const std\+::vector$<$ std\+::string $>$ \&variables, const std\+::vector$<$ std\+::string $>$ \&terminals, const std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ \&productions, const std\+::string \&start)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classCFG}{C\+FG}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCFG_a6a6d74b60d6abc9b91031aaac23067ff}\label{classCFG_a6a6d74b60d6abc9b91031aaac23067ff}} 
+\hyperlink{classCFG_a6a6d74b60d6abc9b91031aaac23067ff}{C\+FG} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classCFG_a01910c6d43cec0d8c07c5f8ef99dc583}{C\+FG} (const std\+::string \&json\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Constructor where a file name to a json file is given, the \hyperlink{classCFG}{C\+FG} will then be parsed from this file. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \hyperlink{classCFG_ac025bd0d80e2240419aa93a2febb97f3}{get\+Variables} () const
+\begin{DoxyCompactList}\small\item\em Getter for the variables. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a5cbdb89aa2f3721e651a177e730fa850}{set\+Variables} (const std\+::vector$<$ std\+::string $>$ \&variables)
+\begin{DoxyCompactList}\small\item\em Setter for the variables. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \hyperlink{classCFG_a70877e28777701a8abc6041b88fd0df3}{get\+Terminals} () const
+\begin{DoxyCompactList}\small\item\em Getter for the terminals. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_afa23352455a95ef16da68fea06c9f3aa}{set\+Terminals} (const std\+::vector$<$ std\+::string $>$ \&terminals)
+\begin{DoxyCompactList}\small\item\em Setter for the terminals. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ \& \hyperlink{classCFG_aa3cb4eae9c5728ad55614ea77125a9c1}{get\+Productions} () const
+\begin{DoxyCompactList}\small\item\em Getter for productions. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a0901757d0f9369339ebf933b611e244e}{set\+Productions} (const std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ \&productions)
+\begin{DoxyCompactList}\small\item\em Setter for productions. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classCFG_a34af6b5b23159e08693864d65e5078ff}{get\+Start} () const
+\begin{DoxyCompactList}\small\item\em Getter for the start symbol. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_adb6a876a834b63968c8389b8d632cfc0}{set\+Start} (const std\+::string \&start)
+\begin{DoxyCompactList}\small\item\em Setter for the start symbol. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a1e6cdb62d1098d571e885f5664ab4eaa}{add\+Variable} (const std\+::string \&to\+Add)
+\begin{DoxyCompactList}\small\item\em Function that adds a variable to the vector. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a53fb7ce08819bddc840bfc47ca5fd6d3}{add\+Terminal} (const std\+::string \&to\+Add)
+\begin{DoxyCompactList}\small\item\em Function that adds a terminal to the vector. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_abcb544cc6860ae5c3c6c53df8a6de848}{add\+Production} (const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&to\+Add)
+\begin{DoxyCompactList}\small\item\em Function that adds a production the the vector. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a31abe7c6d17b7d71e1cd22cc57b4bc4d}{delete\+Variable} (const std\+::string \&to\+Delete)
+\begin{DoxyCompactList}\small\item\em Function that deletes a variable out of the vector. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a8f1e0eec88b6a019c728bac520d18336}{delete\+Variable} (int to\+Delete)
+\begin{DoxyCompactList}\small\item\em Function that deletes a variable at a given index. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a9d54aff45017bc0b4db3ec471d19cd5e}{delete\+Terminal} (const std\+::string \&to\+Delete)
+\begin{DoxyCompactList}\small\item\em Function that deletes a variable terminal out of the vector. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_aab9bd96ae82912ea2b20bcd1bfc82e14}{delete\+Terminal} (int to\+Delete)
+\begin{DoxyCompactList}\small\item\em Function that deletes a terminal with an index. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_a4552d136dbb7b8315e8cbc3f1dc1d26e}{delete\+Production} (int to\+Delete)
+\begin{DoxyCompactList}\small\item\em Function that deletes a production with an index. \end{DoxyCompactList}\item 
+void \hyperlink{classCFG_acd474c77447e00eadd4a0b82ee1f765c}{delete\+Production} (const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&to\+Delete)
+\begin{DoxyCompactList}\small\item\em Function that deletes a production out of the vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCFG_a7a9e0feb406099038faea4c67ef31786}\label{classCFG_a7a9e0feb406099038faea4c67ef31786}} 
+virtual \hyperlink{classCFG_a7a9e0feb406099038faea4c67ef31786}{$\sim$\+C\+FG} ()
+\begin{DoxyCompactList}\small\item\em Destructor for cfg. \end{DoxyCompactList}\item 
+bool \hyperlink{classCFG_a909dec00a27b31ff8522e9300edcd593}{is\+Variable} (const std\+::string \&to\+Check) const
+\begin{DoxyCompactList}\small\item\em Function that checks whether a string is a variable or not. \end{DoxyCompactList}\item 
+bool \hyperlink{classCFG_ae3e42c620977ec6075dae6c8328f0c30}{is\+Terminal} (const std\+::string \&to\+Check) const
+\begin{DoxyCompactList}\small\item\em Function that checks wether a string is a terminal or not. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ \hyperlink{classCFG_abeb17f6d00f2f29f0765340e0f5a3fa7}{get\+Production\+With\+Variable} (const std\+::string \&variable) const
+\begin{DoxyCompactList}\small\item\em Function that gets all the production starting with the given variable. \end{DoxyCompactList}\item 
+bool \hyperlink{classCFG_aa9e56706a12d26ca22295e6b4f82688a}{var\+Has\+Epsilon\+Production} (const std\+::string \&var) const
+\begin{DoxyCompactList}\small\item\em Function that checks whether a variable has epsilon productions or not. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classCFG_a49ffc508da502373b47a6294a1f0ca0b}{get\+Productions\+Going\+To} (const std\+::vector$<$ std\+::string $>$ \&tocheck) const
+\begin{DoxyCompactList}\small\item\em Function that gets all the production going to a certain vector of string. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classCFG_aefe08c649b58b046ee052b3419384509}{get\+From\+Reference\+Table} (const std\+::string \&symbol) const
+\begin{DoxyCompactList}\small\item\em Function that gets all the productions a certain string that is made trough the reference table goed to. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCFG_a89ff398f5c7797b921fab30648a92b8b}{get\+Action\+From\+Production} (std\+::string from, std\+::vector$<$ std\+::string $>$ To) const
+\begin{DoxyCompactList}\small\item\em Function that gets teh action a certain production does. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classCFG_aa896f5667e2f966fb942244b746beaad}{operator$<$$<$} (std\+::ostream \&os, \hyperlink{classCFG}{C\+FG} \&cfg)
+\begin{DoxyCompactList}\small\item\em Ostream operator for cfg. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCFG_aaa7b7d1a1686837e3adbad02a60c7222}\label{classCFG_aaa7b7d1a1686837e3adbad02a60c7222}} 
+\index{C\+FG@{C\+FG}!C\+FG@{C\+FG}}
+\index{C\+FG@{C\+FG}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{C\+F\+G()}{CFG()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+F\+G\+::\+C\+FG (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{variables,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{terminals,  }\item[{const std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ \&}]{productions,  }\item[{const std\+::string \&}]{start }\end{DoxyParamCaption})}
+
+
+
+Constructor for \hyperlink{classCFG}{C\+FG}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variables} & a vector of strings representing the variables \\
+\hline
+{\em terminals} & a vector of string representing the terminals \\
+\hline
+{\em productions} & a vector of \hyperlink{classCFG}{C\+FG} productions \\
+\hline
+{\em start} & a string representing the starting variable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a01910c6d43cec0d8c07c5f8ef99dc583}\label{classCFG_a01910c6d43cec0d8c07c5f8ef99dc583}} 
+\index{C\+FG@{C\+FG}!C\+FG@{C\+FG}}
+\index{C\+FG@{C\+FG}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{C\+F\+G()}{CFG()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+F\+G\+::\+C\+FG (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+\_\+filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor where a file name to a json file is given, the \hyperlink{classCFG}{C\+FG} will then be parsed from this file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+\_\+filename} & a string representing the filepath \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCFG_abcb544cc6860ae5c3c6c53df8a6de848}\label{classCFG_abcb544cc6860ae5c3c6c53df8a6de848}} 
+\index{C\+FG@{C\+FG}!add\+Production@{add\+Production}}
+\index{add\+Production@{add\+Production}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{add\+Production()}{addProduction()}}
+{\footnotesize\ttfamily void C\+F\+G\+::add\+Production (\begin{DoxyParamCaption}\item[{const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&}]{to\+Add }\end{DoxyParamCaption})}
+
+
+
+Function that adds a production the the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & a cfgproduction that will be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a53fb7ce08819bddc840bfc47ca5fd6d3}\label{classCFG_a53fb7ce08819bddc840bfc47ca5fd6d3}} 
+\index{C\+FG@{C\+FG}!add\+Terminal@{add\+Terminal}}
+\index{add\+Terminal@{add\+Terminal}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{add\+Terminal()}{addTerminal()}}
+{\footnotesize\ttfamily void C\+F\+G\+::add\+Terminal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Add }\end{DoxyParamCaption})}
+
+
+
+Function that adds a terminal to the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & String representing a terminal \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a1e6cdb62d1098d571e885f5664ab4eaa}\label{classCFG_a1e6cdb62d1098d571e885f5664ab4eaa}} 
+\index{C\+FG@{C\+FG}!add\+Variable@{add\+Variable}}
+\index{add\+Variable@{add\+Variable}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{add\+Variable()}{addVariable()}}
+{\footnotesize\ttfamily void C\+F\+G\+::add\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Add }\end{DoxyParamCaption})}
+
+
+
+Function that adds a variable to the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & a string representing a variable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a4552d136dbb7b8315e8cbc3f1dc1d26e}\label{classCFG_a4552d136dbb7b8315e8cbc3f1dc1d26e}} 
+\index{C\+FG@{C\+FG}!delete\+Production@{delete\+Production}}
+\index{delete\+Production@{delete\+Production}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{delete\+Production()}{deleteProduction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+::delete\+Production (\begin{DoxyParamCaption}\item[{int}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Function that deletes a production with an index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & an index of the place you want to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_acd474c77447e00eadd4a0b82ee1f765c}\label{classCFG_acd474c77447e00eadd4a0b82ee1f765c}} 
+\index{C\+FG@{C\+FG}!delete\+Production@{delete\+Production}}
+\index{delete\+Production@{delete\+Production}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{delete\+Production()}{deleteProduction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+::delete\+Production (\begin{DoxyParamCaption}\item[{const \hyperlink{classCFGProduction}{C\+F\+G\+Production} \&}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Function that deletes a production out of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & Production that will be deleted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a9d54aff45017bc0b4db3ec471d19cd5e}\label{classCFG_a9d54aff45017bc0b4db3ec471d19cd5e}} 
+\index{C\+FG@{C\+FG}!delete\+Terminal@{delete\+Terminal}}
+\index{delete\+Terminal@{delete\+Terminal}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{delete\+Terminal()}{deleteTerminal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+::delete\+Terminal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Function that deletes a variable terminal out of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & a string that will be deleted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_aab9bd96ae82912ea2b20bcd1bfc82e14}\label{classCFG_aab9bd96ae82912ea2b20bcd1bfc82e14}} 
+\index{C\+FG@{C\+FG}!delete\+Terminal@{delete\+Terminal}}
+\index{delete\+Terminal@{delete\+Terminal}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{delete\+Terminal()}{deleteTerminal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+::delete\+Terminal (\begin{DoxyParamCaption}\item[{int}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Function that deletes a terminal with an index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & an index of the place you want to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a31abe7c6d17b7d71e1cd22cc57b4bc4d}\label{classCFG_a31abe7c6d17b7d71e1cd22cc57b4bc4d}} 
+\index{C\+FG@{C\+FG}!delete\+Variable@{delete\+Variable}}
+\index{delete\+Variable@{delete\+Variable}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{delete\+Variable()}{deleteVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+::delete\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Function that deletes a variable out of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & String that will be deleted\\
+\hline
+{\em to\+Delete} & a string that will be deleted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a8f1e0eec88b6a019c728bac520d18336}\label{classCFG_a8f1e0eec88b6a019c728bac520d18336}} 
+\index{C\+FG@{C\+FG}!delete\+Variable@{delete\+Variable}}
+\index{delete\+Variable@{delete\+Variable}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{delete\+Variable()}{deleteVariable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+F\+G\+::delete\+Variable (\begin{DoxyParamCaption}\item[{int}]{to\+Delete }\end{DoxyParamCaption})}
+
+
+
+Function that deletes a variable at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Delete} & Index of the place you want to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a89ff398f5c7797b921fab30648a92b8b}\label{classCFG_a89ff398f5c7797b921fab30648a92b8b}} 
+\index{C\+FG@{C\+FG}!get\+Action\+From\+Production@{get\+Action\+From\+Production}}
+\index{get\+Action\+From\+Production@{get\+Action\+From\+Production}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+Action\+From\+Production()}{getActionFromProduction()}}
+{\footnotesize\ttfamily std\+::string C\+F\+G\+::get\+Action\+From\+Production (\begin{DoxyParamCaption}\item[{std\+::string}]{from,  }\item[{std\+::vector$<$ std\+::string $>$}]{To }\end{DoxyParamCaption}) const}
+
+
+
+Function that gets teh action a certain production does. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & the head of the production \\
+\hline
+{\em To} & the body of the production \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing the action the production does 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_aefe08c649b58b046ee052b3419384509}\label{classCFG_aefe08c649b58b046ee052b3419384509}} 
+\index{C\+FG@{C\+FG}!get\+From\+Reference\+Table@{get\+From\+Reference\+Table}}
+\index{get\+From\+Reference\+Table@{get\+From\+Reference\+Table}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+From\+Reference\+Table()}{getFromReferenceTable()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ C\+F\+G\+::get\+From\+Reference\+Table (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol }\end{DoxyParamCaption}) const}
+
+
+
+Function that gets all the productions a certain string that is made trough the reference table goed to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & a string representing the symbol you are getting form the reference table \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of strings that each contain a string the reference symbol can go to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_aa3cb4eae9c5728ad55614ea77125a9c1}\label{classCFG_aa3cb4eae9c5728ad55614ea77125a9c1}} 
+\index{C\+FG@{C\+FG}!get\+Productions@{get\+Productions}}
+\index{get\+Productions@{get\+Productions}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+Productions()}{getProductions()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ \& C\+F\+G\+::get\+Productions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for productions. 
+
+\begin{DoxyReturn}{Returns}
+a vector of \hyperlink{classCFG}{C\+FG} productions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_a49ffc508da502373b47a6294a1f0ca0b}\label{classCFG_a49ffc508da502373b47a6294a1f0ca0b}} 
+\index{C\+FG@{C\+FG}!get\+Productions\+Going\+To@{get\+Productions\+Going\+To}}
+\index{get\+Productions\+Going\+To@{get\+Productions\+Going\+To}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+Productions\+Going\+To()}{getProductionsGoingTo()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ C\+F\+G\+::get\+Productions\+Going\+To (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{tocheck }\end{DoxyParamCaption}) const}
+
+
+
+Function that gets all the production going to a certain vector of string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tocheck} & the vector that you are checking if a variable will go to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of string representing the variables that the previous vector goes to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_abeb17f6d00f2f29f0765340e0f5a3fa7}\label{classCFG_abeb17f6d00f2f29f0765340e0f5a3fa7}} 
+\index{C\+FG@{C\+FG}!get\+Production\+With\+Variable@{get\+Production\+With\+Variable}}
+\index{get\+Production\+With\+Variable@{get\+Production\+With\+Variable}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+Production\+With\+Variable()}{getProductionWithVariable()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ C\+F\+G\+::get\+Production\+With\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{variable }\end{DoxyParamCaption}) const}
+
+
+
+Function that gets all the production starting with the given variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable} & a string representing a variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of productions starting with that variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_a34af6b5b23159e08693864d65e5078ff}\label{classCFG_a34af6b5b23159e08693864d65e5078ff}} 
+\index{C\+FG@{C\+FG}!get\+Start@{get\+Start}}
+\index{get\+Start@{get\+Start}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+Start()}{getStart()}}
+{\footnotesize\ttfamily const std\+::string \& C\+F\+G\+::get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the start symbol. 
+
+\begin{DoxyReturn}{Returns}
+a string representing the start symbol 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_a70877e28777701a8abc6041b88fd0df3}\label{classCFG_a70877e28777701a8abc6041b88fd0df3}} 
+\index{C\+FG@{C\+FG}!get\+Terminals@{get\+Terminals}}
+\index{get\+Terminals@{get\+Terminals}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+Terminals()}{getTerminals()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& C\+F\+G\+::get\+Terminals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the terminals. 
+
+\begin{DoxyReturn}{Returns}
+a vector of strings representing the terminals. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_ac025bd0d80e2240419aa93a2febb97f3}\label{classCFG_ac025bd0d80e2240419aa93a2febb97f3}} 
+\index{C\+FG@{C\+FG}!get\+Variables@{get\+Variables}}
+\index{get\+Variables@{get\+Variables}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{get\+Variables()}{getVariables()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& C\+F\+G\+::get\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the variables. 
+
+\begin{DoxyReturn}{Returns}
+a vector of string representing the variables 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_ae3e42c620977ec6075dae6c8328f0c30}\label{classCFG_ae3e42c620977ec6075dae6c8328f0c30}} 
+\index{C\+FG@{C\+FG}!is\+Terminal@{is\+Terminal}}
+\index{is\+Terminal@{is\+Terminal}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{is\+Terminal()}{isTerminal()}}
+{\footnotesize\ttfamily bool C\+F\+G\+::is\+Terminal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Check }\end{DoxyParamCaption}) const}
+
+
+
+Function that checks wether a string is a terminal or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Check} & a string that is going to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_a909dec00a27b31ff8522e9300edcd593}\label{classCFG_a909dec00a27b31ff8522e9300edcd593}} 
+\index{C\+FG@{C\+FG}!is\+Variable@{is\+Variable}}
+\index{is\+Variable@{is\+Variable}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{is\+Variable()}{isVariable()}}
+{\footnotesize\ttfamily bool C\+F\+G\+::is\+Variable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Check }\end{DoxyParamCaption}) const}
+
+
+
+Function that checks whether a string is a variable or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Check} & String that is going to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCFG_a0901757d0f9369339ebf933b611e244e}\label{classCFG_a0901757d0f9369339ebf933b611e244e}} 
+\index{C\+FG@{C\+FG}!set\+Productions@{set\+Productions}}
+\index{set\+Productions@{set\+Productions}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{set\+Productions()}{setProductions()}}
+{\footnotesize\ttfamily void C\+F\+G\+::set\+Productions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classCFGProduction}{C\+F\+G\+Production} $>$ \&}]{productions }\end{DoxyParamCaption})}
+
+
+
+Setter for productions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em productions} & a vector of \hyperlink{classCFG}{C\+FG} productions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_adb6a876a834b63968c8389b8d632cfc0}\label{classCFG_adb6a876a834b63968c8389b8d632cfc0}} 
+\index{C\+FG@{C\+FG}!set\+Start@{set\+Start}}
+\index{set\+Start@{set\+Start}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{set\+Start()}{setStart()}}
+{\footnotesize\ttfamily void C\+F\+G\+::set\+Start (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{start }\end{DoxyParamCaption})}
+
+
+
+Setter for the start symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & a string that will become the start symbol \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_afa23352455a95ef16da68fea06c9f3aa}\label{classCFG_afa23352455a95ef16da68fea06c9f3aa}} 
+\index{C\+FG@{C\+FG}!set\+Terminals@{set\+Terminals}}
+\index{set\+Terminals@{set\+Terminals}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{set\+Terminals()}{setTerminals()}}
+{\footnotesize\ttfamily void C\+F\+G\+::set\+Terminals (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{terminals }\end{DoxyParamCaption})}
+
+
+
+Setter for the terminals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminals} & a vector of strings \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_a5cbdb89aa2f3721e651a177e730fa850}\label{classCFG_a5cbdb89aa2f3721e651a177e730fa850}} 
+\index{C\+FG@{C\+FG}!set\+Variables@{set\+Variables}}
+\index{set\+Variables@{set\+Variables}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{set\+Variables()}{setVariables()}}
+{\footnotesize\ttfamily void C\+F\+G\+::set\+Variables (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{variables }\end{DoxyParamCaption})}
+
+
+
+Setter for the variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variables} & a vector of strings.\\
+\hline
+{\em variables} & a vector of strings \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCFG_aa9e56706a12d26ca22295e6b4f82688a}\label{classCFG_aa9e56706a12d26ca22295e6b4f82688a}} 
+\index{C\+FG@{C\+FG}!var\+Has\+Epsilon\+Production@{var\+Has\+Epsilon\+Production}}
+\index{var\+Has\+Epsilon\+Production@{var\+Has\+Epsilon\+Production}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{var\+Has\+Epsilon\+Production()}{varHasEpsilonProduction()}}
+{\footnotesize\ttfamily bool C\+F\+G\+::var\+Has\+Epsilon\+Production (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{var }\end{DoxyParamCaption}) const}
+
+
+
+Function that checks whether a variable has epsilon productions or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & a string representing the var you are checking for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the production has one or more epsilon production(s) false else wise 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classCFG_aa896f5667e2f966fb942244b746beaad}\label{classCFG_aa896f5667e2f966fb942244b746beaad}} 
+\index{C\+FG@{C\+FG}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!C\+FG@{C\+FG}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\hyperlink{classCFG}{C\+FG} \&}]{cfg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Ostream operator for cfg. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the ostream object its wirten to \\
+\hline
+{\em cfg} & the cfg that will be displayed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the ostream object with the cfg written to 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/C\+F\+G.\+h\item 
+src/C\+F\+G.\+cpp\end{DoxyCompactItemize}

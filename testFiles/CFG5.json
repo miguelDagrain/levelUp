@@ -1,0 +1,14 @@
+{
+	"Variables": ["S","A","B"],
+	"Terminals": ["x", "y"],
+	"Productions": [
+		{"head": "S", "body": ["SS"]},
+		{"head": "S", "body": ["A"]},
+		{"head": "S", "body": ["B"]},
+		{"head": "B", "body": ["y"]},
+		{"head": "A", "body": ["x"]}
+	],
+	"_comment": "Symbols may be multiple characters long, this is why each character in the body is it's own string.",
+	
+	"Start": "S"
+}

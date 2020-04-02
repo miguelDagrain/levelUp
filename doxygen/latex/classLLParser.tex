@@ -1,0 +1,108 @@
+\hypertarget{classLLParser}{}\section{L\+L\+Parser Class Reference}
+\label{classLLParser}\index{L\+L\+Parser@{L\+L\+Parser}}
+
+
+This class implements the LL parser functionality.  
+
+
+
+
+{\ttfamily \#include $<$L\+L\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLLParser_aaa1f2511761d90253b2507a768aebf8a}{L\+L\+Parser} (const \hyperlink{classCFG}{C\+FG} \&cfg, int lookahead)
+\begin{DoxyCompactList}\small\item\em Constructor for the LL parser where the cfg is given. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classLLParser_a57e0b6627039a37977d17d8b915ee1ea}{parse} (std\+::string input) const
+\begin{DoxyCompactList}\small\item\em Function that parses a file with the LL process and returns a vector of actions another function must do. \end{DoxyCompactList}\item 
+void \hyperlink{classLLParser_ad56ae17adea4df70ced21f4299dd3429}{parse\+Table\+To\+H\+T\+ML} (std\+::ostream \&on\+Stream) const
+\begin{DoxyCompactList}\small\item\em Turns the current parse table into html. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classGame}{Game} $>$ \hyperlink{classLLParser_abfc94f8f8cc9230db87183008939dd23}{parse\+File} (const std\+::string \&path) const
+\begin{DoxyCompactList}\small\item\em Function that takes a path of a file then streams the whole file to the parse function as a string and returns the parsed file as a game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements the LL parser functionality. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLLParser_aaa1f2511761d90253b2507a768aebf8a}\label{classLLParser_aaa1f2511761d90253b2507a768aebf8a}} 
+\index{L\+L\+Parser@{L\+L\+Parser}!L\+L\+Parser@{L\+L\+Parser}}
+\index{L\+L\+Parser@{L\+L\+Parser}!L\+L\+Parser@{L\+L\+Parser}}
+\subsubsection{\texorpdfstring{L\+L\+Parser()}{LLParser()}}
+{\footnotesize\ttfamily L\+L\+Parser\+::\+L\+L\+Parser (\begin{DoxyParamCaption}\item[{const \hyperlink{classCFG}{C\+FG} \&}]{cfg,  }\item[{int}]{lookahead }\end{DoxyParamCaption})}
+
+
+
+Constructor for the LL parser where the cfg is given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & The cfg that is used for the parse table of the LL parser. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLLParser_a57e0b6627039a37977d17d8b915ee1ea}\label{classLLParser_a57e0b6627039a37977d17d8b915ee1ea}} 
+\index{L\+L\+Parser@{L\+L\+Parser}!parse@{parse}}
+\index{parse@{parse}!L\+L\+Parser@{L\+L\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ L\+L\+Parser\+::parse (\begin{DoxyParamCaption}\item[{std\+::string}]{input }\end{DoxyParamCaption}) const}
+
+
+
+Function that parses a file with the LL process and returns a vector of actions another function must do. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The string you are checking. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of actions that can be easily parsed to the actual game. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLLParser_abfc94f8f8cc9230db87183008939dd23}\label{classLLParser_abfc94f8f8cc9230db87183008939dd23}} 
+\index{L\+L\+Parser@{L\+L\+Parser}!parse\+File@{parse\+File}}
+\index{parse\+File@{parse\+File}!L\+L\+Parser@{L\+L\+Parser}}
+\subsubsection{\texorpdfstring{parse\+File()}{parseFile()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classGame}{Game} $>$ L\+L\+Parser\+::parse\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption}) const}
+
+
+
+Function that takes a path of a file then streams the whole file to the parse function as a string and returns the parsed file as a game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shared pointer to a fully parsed game. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classLLExcept}{L\+L\+Except}} & when a fault happens \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classLLParser_ad56ae17adea4df70ced21f4299dd3429}\label{classLLParser_ad56ae17adea4df70ced21f4299dd3429}} 
+\index{L\+L\+Parser@{L\+L\+Parser}!parse\+Table\+To\+H\+T\+ML@{parse\+Table\+To\+H\+T\+ML}}
+\index{parse\+Table\+To\+H\+T\+ML@{parse\+Table\+To\+H\+T\+ML}!L\+L\+Parser@{L\+L\+Parser}}
+\subsubsection{\texorpdfstring{parse\+Table\+To\+H\+T\+M\+L()}{parseTableToHTML()}}
+{\footnotesize\ttfamily void L\+L\+Parser\+::parse\+Table\+To\+H\+T\+ML (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{on\+Stream }\end{DoxyParamCaption}) const}
+
+
+
+Turns the current parse table into html. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Stream} & The stream you write to (should be a html file). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/L\+L\+Parser.\+h\item 
+src/L\+L\+Parser.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+{
+	"Variables": ["S","A","B","C"],
+	"Terminals": ["a","b"],
+	"Productions": [
+		{"head": "S", "body": ["A","B"]},
+		{"head": "S", "body": ["B","C"]},
+		{"head": "A", "body": ["B","A"]},
+		{"head": "A", "body": ["a"]},
+		{"head": "B", "body": ["C","C"]},
+		{"head": "B", "body": ["b"]},
+		{"head": "C", "body": ["A","B"]},
+		{"head": "C", "body": ["a"]}
+	],
+	"_comment": "Symbols may be multiple characters long, this is why each character in the body is it's own string.",
+	
+	"Start": "S"
+}

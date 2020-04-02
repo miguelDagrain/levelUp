@@ -1,0 +1,67 @@
+{
+	"Variables": ["Q000","Q001","Q002","Q003","Q004","Q005","Q006","Q007","Q008","Q009","Q010","Q011","Q012","Q013","Q014","Q015"],
+	"Terminals": ["(",")","[","]","{","}","!",",",":","+",
+		{"symbol": "@","type":"alphabet"},
+		{"symbol":"€","type":"numbers"}
+	],
+	"Productions": [
+		{"head": "Q000", "body": ["€"],"action":"parseSpecial"},
+		{"head": "Q001", "body": ["@"],"action":"parseSpecial"},
+		{"head": "Q009", "body": ["t","r","u","e"],"action":"true"},
+		{"head": "Q009", "body": ["f","a","l","s","e"],"action":"false"},
+
+		{"head": "Q002", "body": ["Q003","{","Q012","Q011"],"action":""},
+		{"head": "Q003", "body": ["Q001","[","g","a","m","e","]"],"action":"makeGame"},
+		{"head": "Q012", "body": ["!","Q012",",","Q012"],"action":""},
+
+		{"head": "Q012", "body": ["Q001","[","l","e","v","e","l","]","{","Q015","Q011"],"action":"makeLevel"},
+		{"head": "Q015", "body": ["!","Q015",",","Q015"],"action":""},
+		{"head": "Q015", "body": ["Q004"],"action":""},
+		{"head": "Q004", "body": ["!","Q004",",","Q004"],"action":""},
+
+
+        {"head": "Q004", "body": ["+","Q001","Q005"],"action":"makeGameObject"},
+		{"head": "Q004", "body": ["Q007"],"action":""},
+		{"head": "Q004", "body": ["Q013"],"action":""},
+
+
+        {"head": "Q014", "body": ["g","o","t","o",":","Q001"],"action":"setGoto"},
+		{"head": "Q005", "body": ["[","c","o","n","t","i","n","u","e","]","{","Q014","Q011"],"action":"makeEnd"},
+		{"head": "Q014", "body": ["!","Q014",",","Q014"],"action":""},
+		{"head": "Q014", "body": ["Q007"],"action":""},
+		{"head": "Q014", "body": ["Q010"],"action":""},
+
+
+
+		{"head": "Q005", "body": ["[","e","n","t","i","t","y","]","{","Q006","Q011"],"action":"makeEntity"},
+		{"head": "Q006", "body": ["!","Q006",",","Q006"],"action":""},
+		{"head": "Q006", "body": ["Q007"],"action":""},
+		{"head": "Q006", "body": ["Q008"],"action":""},
+
+        {"head": "Q005", "body": ["Q012"],"action":""},
+        {"head": "Q012", "body": ["[","o","b","j","e","c","t","]","{","Q013","Q011"],"action":"makeObject"},
+        {"head": "Q013", "body": ["!","Q013",",","Q013"],"action":""},
+        {"head": "Q013", "body": ["Q007"],"action":""},
+        {"head": "Q013", "body": ["Q010"],"action":""},
+        {"head": "Q013", "body": ["+","Q001","[","o","b","j","e","c","t","]","{","Q013","Q011"],"action":"makeObject"},
+
+        {"head": "Q007", "body": ["w","i","d","t","h",":","Q000"],"action":"setWidth"},
+		{"head": "Q007", "body": ["h","e","i","g","h","t",":","Q000"],"action":"setHeight"},
+		{"head": "Q007", "body": ["c","o","l","o","r",":","(","Q000",",","Q000",",","Q000",")"],"action":"setColor"},
+
+		{"head": "Q008", "body": ["l","o","c","a","t","i","o","n",":","(","Q000",",","Q000",")"],"action":"setLocation"},
+		{"head": "Q008", "body": ["p","a","t","h","i","n","g",":","Q001"],"action":"setPathing"},
+		{"head": "Q008", "body": ["t","e","x","t","u","r","e",":","Q001"],"action":"setTexture"},
+		{"head": "Q008", "body": ["j","u","m","p","h","e","i","g","h","t",":","Q000"],"action":"setJump"},
+		{"head": "Q008", "body": ["m","o","v","e","m","e","n","t",":","Q000"],"action":"setMovement"},
+
+		{"head": "Q010", "body": ["h","i","t","b","o","x",":","Q009"],"action":"setCollision"},
+		{"head": "Q010", "body": ["l","o","c","a","t","i","o","n",":","(","Q000",",","Q000",")"],"action":"setLocation"},
+		{"head": "Q010", "body": ["Q001","[","o","b","j","e","c","t","]","{","Q013","Q011"],"action":"makeObject"},
+
+		{"head": "Q011", "body": ["}"],"action":"end"}
+
+
+	],
+	"Start": "Q002"
+}

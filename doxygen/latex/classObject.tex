@@ -1,0 +1,153 @@
+\hypertarget{classObject}{}\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+
+
+Inheritance diagram for Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classObject_a40860402e64d8008fb42329df7097cdb}\label{classObject_a40860402e64d8008fb42329df7097cdb}} 
+\hyperlink{classObject_a40860402e64d8008fb42329df7097cdb}{Object} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classObject_ab42ffe43dbd5d5cc089493eb60245ee1}\label{classObject_ab42ffe43dbd5d5cc089493eb60245ee1}} 
+\hyperlink{classObject_ab42ffe43dbd5d5cc089493eb60245ee1}{$\sim$\+Object} () override=default
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a641a0ab489382ba76bd4c538733cc2a4}{set\+Collision} (bool \hyperlink{classObject_aafe6959a6dcbb8c036af3b489386fd98}{can\+Collide})
+\begin{DoxyCompactList}\small\item\em Setter for collision of \hyperlink{classObject}{Object}. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a00673d96b2a75c67f9744f9fc1689727}{set\+Location} (const game\+Location \&location)
+\begin{DoxyCompactList}\small\item\em Setter for the location of an object. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_a0676101219bc31debb04d9d46f64ee15}{set\+Sub\+Objects} (const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&sub\+Objects)
+\begin{DoxyCompactList}\small\item\em Setter for the sub objects of an object. \end{DoxyCompactList}\item 
+const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ $>$ \& \hyperlink{classObject_afdafb10e24b1025d598d1efbda61c873}{get\+Sub\+Objects} () const
+\begin{DoxyCompactList}\small\item\em Getter for the sub objects. \end{DoxyCompactList}\item 
+bool \hyperlink{classObject_aafe6959a6dcbb8c036af3b489386fd98}{can\+Collide} () const
+\begin{DoxyCompactList}\small\item\em Decides whether an object can be collided with. \end{DoxyCompactList}\item 
+const game\+Location \& \hyperlink{classObject_a9a38df5eab9aae1d2706d04528883424}{get\+Location} () const
+\begin{DoxyCompactList}\small\item\em Getter for object location. \end{DoxyCompactList}\item 
+void \hyperlink{classObject_aa0b8ddc63ff2b6f9a2fd31545e349182}{add\+Sub\+Object} (std\+::shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ new\+Object)
+\begin{DoxyCompactList}\small\item\em Adds a subobject to an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classObject_aa0b8ddc63ff2b6f9a2fd31545e349182}\label{classObject_aa0b8ddc63ff2b6f9a2fd31545e349182}} 
+\index{Object@{Object}!add\+Sub\+Object@{add\+Sub\+Object}}
+\index{add\+Sub\+Object@{add\+Sub\+Object}!Object@{Object}}
+\subsubsection{\texorpdfstring{add\+Sub\+Object()}{addSubObject()}}
+{\footnotesize\ttfamily void Object\+::add\+Sub\+Object (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$}]{new\+Object }\end{DoxyParamCaption})}
+
+
+
+Adds a subobject to an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Object} & The subobject to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classObject_aafe6959a6dcbb8c036af3b489386fd98}\label{classObject_aafe6959a6dcbb8c036af3b489386fd98}} 
+\index{Object@{Object}!can\+Collide@{can\+Collide}}
+\index{can\+Collide@{can\+Collide}!Object@{Object}}
+\subsubsection{\texorpdfstring{can\+Collide()}{canCollide()}}
+{\footnotesize\ttfamily bool Object\+::can\+Collide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Decides whether an object can be collided with. 
+
+\begin{DoxyReturn}{Returns}
+True if the object can be collided with 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObject_a9a38df5eab9aae1d2706d04528883424}\label{classObject_a9a38df5eab9aae1d2706d04528883424}} 
+\index{Object@{Object}!get\+Location@{get\+Location}}
+\index{get\+Location@{get\+Location}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Location()}{getLocation()}}
+{\footnotesize\ttfamily const game\+Location \& Object\+::get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for object location. 
+
+\begin{DoxyReturn}{Returns}
+the gamelocation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObject_afdafb10e24b1025d598d1efbda61c873}\label{classObject_afdafb10e24b1025d598d1efbda61c873}} 
+\index{Object@{Object}!get\+Sub\+Objects@{get\+Sub\+Objects}}
+\index{get\+Sub\+Objects@{get\+Sub\+Objects}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Sub\+Objects()}{getSubObjects()}}
+{\footnotesize\ttfamily const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$ $>$ \& Object\+::get\+Sub\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the sub objects. 
+
+\begin{DoxyReturn}{Returns}
+Vector with all the sub objects of an object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObject_a641a0ab489382ba76bd4c538733cc2a4}\label{classObject_a641a0ab489382ba76bd4c538733cc2a4}} 
+\index{Object@{Object}!set\+Collision@{set\+Collision}}
+\index{set\+Collision@{set\+Collision}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Collision()}{setCollision()}}
+{\footnotesize\ttfamily void Object\+::set\+Collision (\begin{DoxyParamCaption}\item[{bool}]{can\+Collide }\end{DoxyParamCaption})}
+
+
+
+Setter for collision of \hyperlink{classObject}{Object}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+Collide} & true if it can collide with other objects \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classObject_a00673d96b2a75c67f9744f9fc1689727}\label{classObject_a00673d96b2a75c67f9744f9fc1689727}} 
+\index{Object@{Object}!set\+Location@{set\+Location}}
+\index{set\+Location@{set\+Location}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Location()}{setLocation()}}
+{\footnotesize\ttfamily void Object\+::set\+Location (\begin{DoxyParamCaption}\item[{const game\+Location \&}]{location }\end{DoxyParamCaption})}
+
+
+
+Setter for the location of an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The new location \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classObject_a0676101219bc31debb04d9d46f64ee15}\label{classObject_a0676101219bc31debb04d9d46f64ee15}} 
+\index{Object@{Object}!set\+Sub\+Objects@{set\+Sub\+Objects}}
+\index{set\+Sub\+Objects@{set\+Sub\+Objects}!Object@{Object}}
+\subsubsection{\texorpdfstring{set\+Sub\+Objects()}{setSubObjects()}}
+{\footnotesize\ttfamily void Object\+::set\+Sub\+Objects (\begin{DoxyParamCaption}\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{classObject}{Object} $>$$>$ \&}]{sub\+Objects }\end{DoxyParamCaption})}
+
+
+
+Setter for the sub objects of an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Objects} & A vector with objects \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Object.\+h\item 
+src/Object.\+cpp\end{DoxyCompactItemize}

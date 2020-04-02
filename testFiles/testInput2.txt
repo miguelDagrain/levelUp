@@ -1,0 +1,12 @@
+speleke[game]{
+!levelke[level]{
+    !width:700,
+    !height:700,
+    color:(52,80,92)
+    },
+levelkes[level]{
+    !width:700,
+    !height:700,
+    color:(52,80,92)
+    }
+}

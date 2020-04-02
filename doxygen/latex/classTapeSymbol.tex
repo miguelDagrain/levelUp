@@ -1,0 +1,87 @@
+\hypertarget{classTapeSymbol}{}\section{Tape\+Symbol Class Reference}
+\label{classTapeSymbol}\index{Tape\+Symbol@{Tape\+Symbol}}
+
+
+This class represents a tape symbol of a Turing machine.  
+
+
+
+
+{\ttfamily \#include $<$Turing\+Machine.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTapeSymbol_a8b667065ca9dbb1840b6e5b940069214}\label{classTapeSymbol_a8b667065ca9dbb1840b6e5b940069214}} 
+\hyperlink{classTapeSymbol_a8b667065ca9dbb1840b6e5b940069214}{Tape\+Symbol} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor of Tape Symbol. \end{DoxyCompactList}\item 
+\hyperlink{classTapeSymbol_ac4babc556460fd8d7da09115d9b19076}{Tape\+Symbol} (std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Constructor for tape symbol which takes its value as input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTapeSymbol_aa0474beea062da16777821736c788835}\label{classTapeSymbol_aa0474beea062da16777821736c788835}} 
+\hyperlink{classTapeSymbol_aa0474beea062da16777821736c788835}{$\sim$\+Tape\+Symbol} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor of the Tape Symbol. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classTapeSymbol_a4f995f73db8026a4511cac0e7da6b66a}{get\+\_\+value\+\_\+string} () const
+\begin{DoxyCompactList}\small\item\em Function that returns the value of the tape symbol. \end{DoxyCompactList}\item 
+bool \hyperlink{classTapeSymbol_a4b36c3f7a3631d02d77c1eb2efa063a0}{operator==} (\hyperlink{classTapeSymbol}{Tape\+Symbol} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator for \hyperlink{classTapeSymbol}{Tape\+Symbol}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a tape symbol of a Turing machine. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTapeSymbol_ac4babc556460fd8d7da09115d9b19076}\label{classTapeSymbol_ac4babc556460fd8d7da09115d9b19076}} 
+\index{Tape\+Symbol@{Tape\+Symbol}!Tape\+Symbol@{Tape\+Symbol}}
+\index{Tape\+Symbol@{Tape\+Symbol}!Tape\+Symbol@{Tape\+Symbol}}
+\subsubsection{\texorpdfstring{Tape\+Symbol()}{TapeSymbol()}}
+{\footnotesize\ttfamily Tape\+Symbol\+::\+Tape\+Symbol (\begin{DoxyParamCaption}\item[{std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for tape symbol which takes its value as input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value of the tape symbol \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTapeSymbol_a4f995f73db8026a4511cac0e7da6b66a}\label{classTapeSymbol_a4f995f73db8026a4511cac0e7da6b66a}} 
+\index{Tape\+Symbol@{Tape\+Symbol}!get\+\_\+value\+\_\+string@{get\+\_\+value\+\_\+string}}
+\index{get\+\_\+value\+\_\+string@{get\+\_\+value\+\_\+string}!Tape\+Symbol@{Tape\+Symbol}}
+\subsubsection{\texorpdfstring{get\+\_\+value\+\_\+string()}{get\_value\_string()}}
+{\footnotesize\ttfamily std\+::string Tape\+Symbol\+::get\+\_\+value\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function that returns the value of the tape symbol. 
+
+\begin{DoxyReturn}{Returns}
+the value as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTapeSymbol_a4b36c3f7a3631d02d77c1eb2efa063a0}\label{classTapeSymbol_a4b36c3f7a3631d02d77c1eb2efa063a0}} 
+\index{Tape\+Symbol@{Tape\+Symbol}!operator==@{operator==}}
+\index{operator==@{operator==}!Tape\+Symbol@{Tape\+Symbol}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Tape\+Symbol\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{classTapeSymbol}{Tape\+Symbol} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for \hyperlink{classTapeSymbol}{Tape\+Symbol}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other tape symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this Tape Symbol is equal to the other one 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Turing\+Machine.\+h\item 
+src/Turing\+Machine.\+cpp\end{DoxyCompactItemize}

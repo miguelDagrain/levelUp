@@ -1,0 +1,210 @@
+\hypertarget{classEntity}{}\section{Entity Class Reference}
+\label{classEntity}\index{Entity@{Entity}}
+
+
+Class which represents an \hyperlink{classEntity}{Entity} of the \hyperlink{classGame}{Game} Derived from abstract \hyperlink{classGameObject}{Game\+Object}.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+
+
+Inheritance diagram for Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classEntity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classEntity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEntity_a0193c7a349273d65551c229ab1afabaf}{Entity} (int width, int height, double move\+Speed, double jump\+Height, const game\+Location \&location, const string \&m\+\_\+texture\+Path)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a980f368aa07ce358583982821533a54a}\label{classEntity_a980f368aa07ce358583982821533a54a}} 
+\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \hyperlink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+double \hyperlink{classEntity_ae702b415329b0c3f382747f0a6668115}{get\+Movement\+Speed} () const
+\begin{DoxyCompactList}\small\item\em Getter for movement speed. \end{DoxyCompactList}\item 
+double \hyperlink{classEntity_a4f950165af1db516a081d1085c21032e}{get\+Jump\+Height} () const
+\begin{DoxyCompactList}\small\item\em Getter for jump height. \end{DoxyCompactList}\item 
+const game\+Location \& \hyperlink{classEntity_a1096aa490b52f061d947b2cc3831266e}{get\+Location} () const
+\begin{DoxyCompactList}\small\item\em Getter for the location of the entity. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_ab6ccff5da8e3cdc67659b0e89158c199}{set\+Jump\+Height} (double jump\+Height)
+\begin{DoxyCompactList}\small\item\em Setter for jump height. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a70bfcbab042dfd1f1571e06d406985f4}{set\+Location} (const game\+Location \&location)
+\begin{DoxyCompactList}\small\item\em Setter for the location. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_a1ee8abc607182bd4dc3a650cafb98188}{set\+Movement\+Speed} (double speed)
+\begin{DoxyCompactList}\small\item\em Setter for movement speed of entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a605d474ccbd30c3d4350016ec173546a}\label{classEntity_a605d474ccbd30c3d4350016ec173546a}} 
+\hyperlink{classEntity_a605d474ccbd30c3d4350016ec173546a}{$\sim$\+Entity} () override=default
+\begin{DoxyCompactList}\small\item\em Default destructor for \hyperlink{classEntity}{Entity}. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classEntity_a01357a3f88d3d7277cff951fa1a63add}{is\+Player} () const
+\begin{DoxyCompactList}\small\item\em Determine if the entity is a player or not. \end{DoxyCompactList}\item 
+void \hyperlink{classEntity_ad80d65640fe9dd1ae0a0660f02dc60f5}{set\+Player\+Bool} (bool \hyperlink{classEntity_a01357a3f88d3d7277cff951fa1a63add}{is\+Player})
+\begin{DoxyCompactList}\small\item\em Setter for bool to determine if entity is player or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which represents an \hyperlink{classEntity}{Entity} of the \hyperlink{classGame}{Game} Derived from abstract \hyperlink{classGameObject}{Game\+Object}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEntity_a0193c7a349273d65551c229ab1afabaf}\label{classEntity_a0193c7a349273d65551c229ab1afabaf}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{double}]{move\+Speed,  }\item[{double}]{jump\+Height,  }\item[{const game\+Location \&}]{location,  }\item[{const string \&}]{m\+\_\+texture\+Path }\end{DoxyParamCaption})}
+
+
+
+Constructor for \hyperlink{classEntity}{Entity}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the entity \\
+\hline
+{\em height} & Height of the entity \\
+\hline
+{\em move\+Speed} & Movement speed of the entity \\
+\hline
+{\em jump\+Height} & Jump height of the entity \\
+\hline
+{\em location} & Location of the \hyperlink{classEntity}{Entity} \\
+\hline
+{\em m\+\_\+texture\+Path} & Path to texture of entity \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_a4f950165af1db516a081d1085c21032e}\label{classEntity_a4f950165af1db516a081d1085c21032e}} 
+\index{Entity@{Entity}!get\+Jump\+Height@{get\+Jump\+Height}}
+\index{get\+Jump\+Height@{get\+Jump\+Height}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Jump\+Height()}{getJumpHeight()}}
+{\footnotesize\ttfamily double Entity\+::get\+Jump\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for jump height. 
+
+\begin{DoxyReturn}{Returns}
+Jump height (double) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a1096aa490b52f061d947b2cc3831266e}\label{classEntity_a1096aa490b52f061d947b2cc3831266e}} 
+\index{Entity@{Entity}!get\+Location@{get\+Location}}
+\index{get\+Location@{get\+Location}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Location()}{getLocation()}}
+{\footnotesize\ttfamily const game\+Location \& Entity\+::get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the location of the entity. 
+
+\begin{DoxyReturn}{Returns}
+Location of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_ae702b415329b0c3f382747f0a6668115}\label{classEntity_ae702b415329b0c3f382747f0a6668115}} 
+\index{Entity@{Entity}!get\+Movement\+Speed@{get\+Movement\+Speed}}
+\index{get\+Movement\+Speed@{get\+Movement\+Speed}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Movement\+Speed()}{getMovementSpeed()}}
+{\footnotesize\ttfamily double Entity\+::get\+Movement\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for movement speed. 
+
+\begin{DoxyReturn}{Returns}
+Movement speed (double) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_a01357a3f88d3d7277cff951fa1a63add}\label{classEntity_a01357a3f88d3d7277cff951fa1a63add}} 
+\index{Entity@{Entity}!is\+Player@{is\+Player}}
+\index{is\+Player@{is\+Player}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{is\+Player()}{isPlayer()}}
+{\footnotesize\ttfamily bool Entity\+::is\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Determine if the entity is a player or not. 
+
+\begin{DoxyReturn}{Returns}
+True if the entity is a player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEntity_ab6ccff5da8e3cdc67659b0e89158c199}\label{classEntity_ab6ccff5da8e3cdc67659b0e89158c199}} 
+\index{Entity@{Entity}!set\+Jump\+Height@{set\+Jump\+Height}}
+\index{set\+Jump\+Height@{set\+Jump\+Height}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Jump\+Height()}{setJumpHeight()}}
+{\footnotesize\ttfamily void Entity\+::set\+Jump\+Height (\begin{DoxyParamCaption}\item[{double}]{jump\+Height }\end{DoxyParamCaption})}
+
+
+
+Setter for jump height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jump\+Height} & Jump height of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_a70bfcbab042dfd1f1571e06d406985f4}\label{classEntity_a70bfcbab042dfd1f1571e06d406985f4}} 
+\index{Entity@{Entity}!set\+Location@{set\+Location}}
+\index{set\+Location@{set\+Location}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Location()}{setLocation()}}
+{\footnotesize\ttfamily void Entity\+::set\+Location (\begin{DoxyParamCaption}\item[{const game\+Location \&}]{location }\end{DoxyParamCaption})}
+
+
+
+Setter for the location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Location of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_a1ee8abc607182bd4dc3a650cafb98188}\label{classEntity_a1ee8abc607182bd4dc3a650cafb98188}} 
+\index{Entity@{Entity}!set\+Movement\+Speed@{set\+Movement\+Speed}}
+\index{set\+Movement\+Speed@{set\+Movement\+Speed}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Movement\+Speed()}{setMovementSpeed()}}
+{\footnotesize\ttfamily void Entity\+::set\+Movement\+Speed (\begin{DoxyParamCaption}\item[{double}]{speed }\end{DoxyParamCaption})}
+
+
+
+Setter for movement speed of entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & Movement speed of entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEntity_ad80d65640fe9dd1ae0a0660f02dc60f5}\label{classEntity_ad80d65640fe9dd1ae0a0660f02dc60f5}} 
+\index{Entity@{Entity}!set\+Player\+Bool@{set\+Player\+Bool}}
+\index{set\+Player\+Bool@{set\+Player\+Bool}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Player\+Bool()}{setPlayerBool()}}
+{\footnotesize\ttfamily void Entity\+::set\+Player\+Bool (\begin{DoxyParamCaption}\item[{bool}]{is\+Player }\end{DoxyParamCaption})}
+
+
+
+Setter for bool to determine if entity is player or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Player} & Bool which identifies the player \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Entity.\+h\item 
+src/Entity.\+cpp\end{DoxyCompactItemize}

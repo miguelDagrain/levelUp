@@ -1,0 +1,16 @@
+{
+	"Variables": ["E","T","X","Y"],
+	"Terminals": ["*", "+","(",")","int"],
+	"Productions": [
+		{"head": "E", "body": ["T", "X"]},
+		{"head": "T", "body": ["(","E",")"]},
+		{"head": "T", "body": ["int","Y"]},
+		{"head": "X", "body": ["+","E"]},
+		{"head": "X", "body": []},
+		{"head": "Y", "body": ["*","T"]},
+		{"head": "Y", "body": []}
+	],
+	"_comment": "Symbols may be multiple characters long, this is why each character in the body is it's own string.",
+	
+	"Start": "E"
+}
